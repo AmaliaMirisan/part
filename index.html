@@ -362,13 +362,14 @@
     <input type="checkbox" id="portita_acces" name="q23" value="portita_acces" checked disabled>
     <label for="portita_acces">Pentru a avea o portita de acces pentru accesarea ulterioara a sistemului</label><br>
 
-    <input type="checkbox" id="acces_root" name="q23" value="acces_root">
+    <input type="checkbox" id="acces_root" name="q23" value="acces_root" checked disabled>
     <label for="acces_root">Pentru a accesa sistemul ca root (superuser)</label><br>
 
     <input type="checkbox" id="ascundere_urme" name="q23" value="ascundere_urme" checked disabled>
     <label for="ascundere_urme">Pentru a-si ascunde urmele</label>
 </fieldset>
 <br>
+        
 <fieldset>
     <legend><strong>Intrebarea:</strong></legend>
     <p>Detectarea unui virus poate fi ingreunata de:</p>
@@ -600,6 +601,345 @@
 
     <input type="checkbox" id="folosire_https" name="q39" value="folosire_https" checked disabled>
     <label for="folosire_https">Folosirea protocolului https in locul protocolului http pentru a accesa aplicatia web</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Care dintre urmatoarele reprezinta vulnerabilitati celebre din ultima perioada:</p>
+
+    <input type="checkbox" id="heartbleed" name="q40" value="heartbleed">
+    <label for="heartbleed">Heartbleed</label><br>
+
+    <input type="checkbox" id="basshole" name="q40" value="basshole" checked disabled>
+    <label for="basshole">Basshole</label><br>
+
+    <input type="checkbox" id="shellshock" name="q40" value="shellshock">
+    <label for="shellshock">Shellshock</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Care dintre urmatoarele vulnerabilitati ar putea fi exploatata pentru a fura sesiunea unui utilizator autenticat?</p>
+
+    <input type="checkbox" id="sql_injection" name="q44" value="sql_injection">
+    <label for="sql_injection">SQL Injection</label><br>
+
+    <input type="checkbox" id="xss" name="q44" value="xss" checked disabled>
+    <label for="xss">Cross-Site Scripting (XSS)</label><br>
+
+    <input type="checkbox" id="csrf" name="q44" value="csrf" checked disabled>
+    <label for="csrf">Cross-Site Request Forgery (CSRF)</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Care dintre urmatoarele mecanisme limiteaza succesul exploiturilor de tip shellcode?</p>
+
+    <input type="checkbox" id="randomizare_stiva" name="q45" value="randomizare_stiva" checked disabled>
+    <label for="randomizare_stiva">Randomizarea stivei</label><br>
+
+    <input type="checkbox" id="arhivare_stiva" name="q45" value="arhivare_stiva">
+    <label for="arhivare_stiva">Arhivarea (compactarea) stivei</label><br>
+
+    <input type="checkbox" id="indepartare_bit_executie" name="q45" value="indepartare_bit_executie">
+    <label for="indepartare_bit_executie">Indepartarea bitului de executie de pe programul atacat</label><br>
+
+    <input type="checkbox" id="dep" name="q45" value="dep" checked disabled>
+    <label for="dep">Data Execution Prevention</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Data Execution Prevention se refera la:</p>
+
+    <input type="checkbox" id="masura_randomizare_stiva" name="q46" value="masura_randomizare_stiva">
+    <label for="masura_randomizare_stiva">O masura complementara mecanismului de randomizare a stivei pentru a preveni anumite tipuri de atacuri</label><br>
+
+    <input type="checkbox" id="prevenire_cod_executabil" name="q46" value="prevenire_cod_executabil" checked disabled>
+    <label for="prevenire_cod_executabil">Un mecanism pentru a preveni atacurile ce presupun injectarea de cod executabil pe stiva</label><br>
+
+    <input type="checkbox" id="prevenire_executie_zone_date" name="q46" value="prevenire_executie_zone_date" checked disabled>
+    <label for="prevenire_executie_zone_date">Un mecanism de prevenire a executiei zonelor de memorie ce nu contin instructiuni valide (contin date, variabile, constante)</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Apelurile sistem Linux pot fi apelate ca functii de la intrerupere:</p>
+
+    <input type="checkbox" id="80" name="q47" value="80">
+    <label for="80">80</label><br>
+
+    <input type="checkbox" id="21h" name="q47" value="21h">
+    <label for="21h">21h</label><br>
+
+    <input type="checkbox" id="21" name="q47" value="21">
+    <label for="21">21</label><br>
+
+    <input type="checkbox" id="80h" name="q47" value="80h" checked disabled>
+    <label for="80h">80h</label><br>
+
+    <input type="checkbox" id="apeluri_c" name="q47" value="apeluri_c">
+    <label for="apeluri_c">Apelurile sistem Linux sunt implementate in C, nu ca functii de la o anumita intrerupere</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Ce memoreaza autoritatile de marca temporala?</p>
+
+    <input type="checkbox" id="nu_memoreaza" name="q48" value="nu_memoreaza">
+    <label for="nu_memoreaza">Nu memoreaza nimic, doar semneaza, validitatea semnaturii putand fi usor dovedita cu ajutorul cheii publice a autoritatii de marca temporala</label><br>
+
+    <input type="checkbox" id="cereri_raspunsuri" name="q48" value="cereri_raspunsuri" checked disabled>
+    <label for="cereri_raspunsuri">Cererile si raspunsurile venite spre si dinspre acestea</label><br>
+
+    <input type="checkbox" id="documente_semnate" name="q48" value="documente_semnate">
+    <label for="documente_semnate">Documentele semnate</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Ce se trimite unei autoritati de marca temporala pentru a dovedi ca un anumit document exista la un anumit moment de timp?</p>
+
+    <input type="checkbox" id="document_semnare_timp" name="q49" value="document_semnare_timp">
+    <label for="document_semnare_timp">Documentul semnat si momentul de timp</label><br>
+
+    <input type="checkbox" id="document_semnat" name="q49" value="document_semnat">
+    <label for="document_semnat">Documentul semnat</label><br>
+
+    <input type="checkbox" id="hash_semnatura" name="q49" value="hash_semnatura" checked disabled>
+    <label for="hash_semnatura">Un hash al documentului si o semnatura</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Functia aplicata pe text si pe cheia privata poate asigura:</p>
+
+    <input type="checkbox" id="confidentialitate_mesaj" name="q50" value="confidentialitate_mesaj">
+    <label for="confidentialitate_mesaj">Confidentialitatea mesajului</label><br>
+
+    <input type="checkbox" id="nerepudiere_mesaj" name="q50" value="nerepudiere_mesaj" checked disabled>
+    <label for="nerepudiere_mesaj">Nerepudierea mesajului</label><br>
+
+    <input type="checkbox" id="autenticitate_mesaj" name="q50" value="autenticitate_mesaj" checked disabled>
+    <label for="autenticitate_mesaj">Autenticitatea mesajului</label><br>
+
+    <input type="checkbox" id="integritate_mesaj" name="q50" value="integritate_mesaj" checked disabled>
+    <label for="integritate_mesaj">Integritatea mesajului</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Pentru a creste gradul de reusita a unui atac de tip phishing, atacatorul trebuie sa:</p>
+
+    <input type="checkbox" id="cloneaza_site" name="q51" value="cloneaza_site" checked disabled>
+    <label for="cloneaza_site">Cloneze perfect site-ul targetat (spre exemplu site-ul unei institutii bancare)</label><br>
+
+    <input type="checkbox" id="adauga_root_ca" name="q51" value="adauga_root_ca">
+    <label for="adauga_root_ca">Sa isi adauge propria autoritate de certificare (ROOT CA) pe calculatoarele victimelor</label><br>
+
+    <input type="checkbox" id="forteaza_http" name="q51" value="forteaza_http" checked disabled>
+    <label for="forteaza_http">Sa forteze ca victimele sa acceseze site-ul clonat prin HTTP, nu HTTPS pentru a putea intercepta traficul</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Care dintre urmatoarele afirmatii sunt adevarate in ceea ce priveste certificatele digitale Web client-side?</p>
+
+    <input type="checkbox" id="semnate_cheie_server" name="q52" value="semnate_cheie_server">
+    <label for="semnate_cheie_server">Sunt semnate cu aceeasi cheie privata cu care este semnat si certificatul serverului Web</label><br>
+
+    <input type="checkbox" id="transmise_canale_sigur" name="q52" value="transmise_canale_sigur" checked disabled>
+    <label for="transmise_canale_sigur">Sunt transmise clientului exclusiv pe canale de incredere (sigure)</label><br>
+
+    <input type="checkbox" id="folosite_ssl" name="q52" value="folosite_ssl" checked disabled>
+    <label for="folosite_ssl">Folosite impreuna cu protocolul SSL si cu autentificarea pe baza de user si parola sporesc securitatea autentificarii si identificarii clientului</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>O retea virtuala privata (VPN) se bazeaza pe:</p>
+
+    <input type="checkbox" id="tunelare" name="q53" value="tunelare" checked disabled>
+    <label for="tunelare">Tunelare</label><br>
+
+    <input type="checkbox" id="criptare" name="q53" value="criptare" checked disabled>
+    <label for="criptare">Criptare</label><br>
+
+    <input type="checkbox" id="incapsulare_protocoale" name="q53" value="incapsulare_protocoale" checked disabled>
+    <label for="incapsulare_protocoale">Incapuslarea protocoalelor</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Care dintre urmatoarele afirmatii sunt adevarate in ceea ce priveste o semnatura digitala?</p>
+
+    <input type="checkbox" id="document_datat" name="q54" value="document_datat" checked disabled>
+    <label for="document_datat">Orice document semnat digital poate fi datat in timp</label><br>
+
+    <input type="checkbox" id="semnatura_hash" name="q54" value="semnatura_hash">
+    <label for="semnatura_hash">Semnatura digitala este de fapt un hash</label><br>
+
+    <input type="checkbox" id="semnatura_cheie_privata" name="q54" value="semnatura_cheie_privata" checked disabled>
+    <label for="semnatura_cheie_privata">Semnatura digitala este creata cu ajutorul unei chei private</label><br>
+
+    <input type="checkbox" id="parte_validare" name="q54" value="parte_validare" checked disabled>
+    <label for="parte_validare">Pentru a aplica o semnatura digitala mai este nevoie de cel putin inca o parte implicata care sa ateste ca semnatura e valida si sa emita un certificat digital emis</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Certificatele digitale autosemnate se folosesc:</p>
+
+    <input type="checkbox" id="de_catre_CA" name="q55" value="de_catre_CA">
+    <label for="de_catre_CA">De catre autoritatile de certificare</label><br>
+
+    <input type="checkbox" id="emis_utilizator" name="q55" value="emis_utilizator" checked disabled>
+    <label for="emis_utilizator">Doar daca apartin/sunt emise de catre un utilizator pentru el insusi si sunt semnate de catre acelasi utilizator</label><br>
+
+    <input type="checkbox" id="nu_autosemnat" name="q55" value="nu_autosemnat">
+    <label for="nu_autosemnat">Un certificat nu poate fi autosemnat</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Un certificat digital ajuta la:</p>
+
+    <input type="checkbox" id="verificare_integritate" name="q56" value="verificare_integritate" checked disabled>
+    <label for="verificare_integritate">Verificarea integritatii si autenticitatii unei mesaje semnate de catre persoana careia ii este emis certificatul digital</label><br>
+
+    <input type="checkbox" id="criptare_mesaj" name="q56" value="criptare_mesaj" checked disabled>
+    <label for="criptare_mesaj">Criptarea unui mesaj destinat persoanei careia ii este emis certificatul</label><br>
+
+    <input type="checkbox" id="decriptare_mesaj" name="q56" value="decriptare_mesaj">
+    <label for="decriptare_mesaj">Decriptarea unui mesaj criptat de persoana careia ii este emis certificatul</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Care este pericolul compromiterii unui certificat digital emis unui site Web in scopul autentificarii acestuia de catre clienti?</p>
+
+    <input type="checkbox" id="semnare_in_nume" name="q57" value="semnare_in_nume" checked disabled>
+    <label for="semnare_in_nume">Sa poti semna documente in numele site-ului web respectiv</label><br>
+
+    <input type="checkbox" id="niciun_pericol" name="q57" value="niciun_pericol">
+    <label for="niciun_pericol">Nu exista niciun pericol</label><br>
+
+    <input type="checkbox" id="extrage_cheie_publica" name="q57" value="extrage_cheie_publica">
+    <label for="extrage_cheie_publica">Se poate extrage cheia publica din acel certificat dar acest fapt nu reprezinta un pericol</label><br>
+
+    <input type="checkbox" id="extrage_cheie_privata" name="q57" value="extrage_cheie_privata">
+    <label for="extrage_cheie_privata">Se poate extrage cheia privata din acel certificat</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Care dintre urmatorii algoritmi sunt folositi pentru generarea cheilor in criptografia cu cheie publica?</p>
+
+    <input type="checkbox" id="aes" name="q58" value="aes">
+    <label for="aes">AES</label><br>
+
+    <input type="checkbox" id="blowfish" name="q58" value="blowfish">
+    <label for="blowfish">Blowfish</label><br>
+
+    <input type="checkbox" id="ecc" name="q58" value="ecc" checked disabled>
+    <label for="ecc">ECC (Elliptic Curve Cryptography)</label><br>
+
+    <input type="checkbox" id="twofish" name="q58" value="twofish">
+    <label for="twofish">Twofish</label><br>
+
+    <input type="checkbox" id="md5" name="q58" value="md5">
+    <label for="md5">MD5</label><br>
+
+    <input type="checkbox" id="des" name="q58" value="des">
+    <label for="des">DES</label><br>
+
+    <input type="checkbox" id="sha256" name="q58" value="sha256">
+    <label for="sha256">SHA-256</label><br>
+
+    <input type="checkbox" id="rsa" name="q58" value="rsa" checked disabled>
+    <label for="rsa">RSA</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Care dintre urmatoarele reprezinta proprietati care trebuie sa fie respectate de catre o semnatura electronica?</p>
+
+    <input type="checkbox" id="neretractabil" name="q59" value="neretractabil">
+    <label for="neretractabil">Neretractabil</label><br>
+
+    <input type="checkbox" id="nefalsificabil" name="q59" value="nefalsificabil">
+    <label for="nefalsificabil">Nefalsificabil</label><br>
+
+    <input type="checkbox" id="nerepudiabil" name="q59" value="nerepudiabil" checked disabled>
+    <label for="nerepudiabil">Nerepudiabil</label><br>
+
+    <input type="checkbox" id="autentic" name="q59" value="autentic" checked disabled>
+    <label for="autentic">Autentic</label><br>
+
+    <input type="checkbox" id="nerestrictivizat" name="q59" value="nerestrictivizat">
+    <label for="nerestrictivizat">Nerestrictivizat</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Criptarea datelor intre parteneri se poate face in Internet la care dintre urmatoarele niveluri?</p>
+
+    <input type="checkbox" id="aplicatie" name="q60" value="aplicatie" checked disabled>
+    <label for="aplicatie">Aplicatie</label><br>
+
+    <input type="checkbox" id="fizic" name="q60" value="fizic">
+    <label for="fizic">Fizic si legatura de date</label><br>
+
+    <input type="checkbox" id="retea" name="q60" value="retea" checked disabled>
+    <label for="retea">Retea</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Pe un canal de comunicare securizat (spre exemplu SSL), ce trebuie sa cunoasca serverul pentru a putea autentifica cu succes un client?</p>
+
+    <input type="checkbox" id="doar_clientul" name="q61" value="doar_clientul">
+    <label for="doar_clientul">Doar clientul poate autentifica serverul folosind mecanisme bazate pe chei sau certificate, serverul autentifica clientul exclusiv pe baza unui nume de utilizator si a unei parole</label><br>
+
+    <input type="checkbox" id="cheie_publica_client" name="q61" value="cheie_publica_client" checked disabled>
+    <label for="cheie_publica_client">Cheia publica a clientului</label><br>
+
+    <input type="checkbox" id="cheie_privata_client" name="q61" value="cheie_privata_client">
+    <label for="cheie_privata_client">Cheia privata a clientului</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Vulnerabilitatea functiilor de hash este data de:</p>
+
+    <input type="checkbox" id="baze_date" name="q62" value="baze_date" checked disabled>
+    <label for="baze_date">Baze de date ce contin perechi x-y unde hash(x) = y</label><br>
+
+    <input type="checkbox" id="coliziuni" name="q62" value="coliziuni" checked disabled>
+    <label for="coliziuni">Coliziuni</label><br>
+
+    <input type="checkbox" id="codomeniu_mic" name="q62" value="codomeniu_mic" checked disabled>
+    <label for="codomeniu_mic">Un codomeniu avand cardinalitate mica</label><br>
+
+    <input type="checkbox" id="confidentialitate_algoritm" name="q62" value="confidentialitate_algoritm">
+    <label for="confidentialitate_algoritm">Compromiterea confidentialitatii algoritmului functiei de hash si aducerea acestuia la cunostinta publica</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Semnarea unui document se face folosind:</p>
+
+    <input type="checkbox" id="cheie_pub_destinatar" name="q63" value="cheie_pub_destinatar">
+    <label for="cheie_pub_destinatar">Cheia publica a destinatarului mesajului</label><br>
+
+    <input type="checkbox" id="cheie_pub_emitator" name="q63" value="cheie_pub_emitator">
+    <label for="cheie_pub_emitator">Cheia publica a emitatorului mesajului</label><br>
+
+    <input type="checkbox" id="cheie_priv_emitator" name="q63" value="cheie_priv_emitator" checked disabled>
+    <label for="cheie_priv_emitator">Cheia privata a emitatorului mesajului</label><br>
+
+    <input type="checkbox" id="cheie_priv_destinatar" name="q63" value="cheie_priv_destinatar">
+    <label for="cheie_priv_destinatar">Cheia privata a destinatarului mesajului</label>
 </fieldset>
 
     </form>
