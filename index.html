@@ -2,12 +2,15 @@
 <html lang="ro">
 <head>
     <meta charset="UTF-8">
+    <title>Quiz Criptografie</title>
 </head>
 <body>
     <form>
+
         <fieldset>
-            <legend><strong>Întrebarea 1:</strong></legend>
+            <legend><strong>Intrebarea 1:</strong></legend>
             <p>Care dintre urmatoarele protocoale folosesc criptografia cu cheie publica?</p>
+
             <input type="checkbox" id="ssh" name="q1" value="ssh" checked disabled>
             <label for="ssh">SSH</label><br>
 
@@ -24,8 +27,9 @@
         <br>
 
         <fieldset>
-            <legend><strong>Întrebarea 2:</strong></legend>
+            <legend><strong>Intrebarea 2:</strong></legend>
             <p>Autoritatile de marca temporala care dovedesc existenta unui document la un anumit moment de timp:</p>
+
             <input type="checkbox" id="semneaza_doc" name="q2" value="semneaza_doc">
             <label for="semneaza_doc">Semneaza si ele documentul</label><br>
 
@@ -35,52 +39,57 @@
             <input type="checkbox" id="semneaza_hash" name="q2" value="semneaza_hash" checked disabled>
             <label for="semneaza_hash">Semneaza un hash al documentului</label>
         </fieldset>
-<fieldset>
-    <legend><strong>Intrebarea:</strong></legend>
-    <p>Increderea unui utilizator intr-o autoritate de certificare:</p>
 
-    <input type="checkbox" id="emitere_certificat" name="q1" value="emitere_certificat">
-    <label for="emitere_certificat">Presupune emiterea de catre autoritatea de certificare a unui certificat digital utilizatorului</label><br>
-
-    <input type="checkbox" id="cunoastere_cheie_publica" name="q1" value="cunoastere_cheie_publica">
-    <label for="cunoastere_cheie_publica">Presupune cunoasterea de catre utilizator a cheii publice a autoritatii de certificare</label><br>
-
-    <input type="checkbox" id="cunoastere_cheie_privata" name="q1" value="cunoastere_cheie_privata">
-    <label for="cunoastere_cheie_privata">Presupune cunoasterea de catre utilizator a cheii private a autoritatii de certificare</label>
-</fieldset>
-<fieldset>
-    <legend><strong>Intrebarea:</strong></legend>
-    <p>Pentru a asigura securitatea unei aplicatii web, unde este locul in care trebuie plasate validarile asupra datelor introduse de catre utilizatori?</p>
-
-    <input type="checkbox" id="validari_autorizare_client" name="q2" value="validari_autorizare_client">
-    <label for="validari_autorizare_client">Validarile privind autorizarea utilizatorilor de a efectua o actiune trebuie sa fie facute client-side, iar cele ce privesc integritatea datelor trebuie facute server-side</label><br>
-
-    <input type="checkbox" id="server_side" name="q2" value="server_side">
-    <label for="server_side">Server-side</label><br>
-
-    <input type="checkbox" id="client_side" name="q2" value="client_side">
-    <label for="client_side">Client-side</label>
-</fieldset>
+        <br>
 
         <fieldset>
-            
-    <legend><strong>Intrebarea:</strong></legend>
-    <p>Cum se poate "fura" un cookie de sesiune al unui alt utilizator?</p>
+            <legend><strong>Intrebarea 3:</strong></legend>
+            <p>Increderea unui utilizator intr-o autoritate de certificare:</p>
 
-    <input type="checkbox" id="interceptare" name="q3" value="interceptare">
-    <label for="interceptare">Prin interceptarea datelor la nivelul retelei de transport in lipsa folosirii unei conexiuni sigure</label><br>
+            <input type="checkbox" id="emitere_certificat" name="q3" value="emitere_certificat">
+            <label for="emitere_certificat">Presupune emiterea de catre autoritatea de certificare a unui certificat digital utilizatorului</label><br>
 
-    <input type="checkbox" id="lipsa_logout" name="q3" value="lipsa_logout">
-    <label for="lipsa_logout">Prin lipsa invalidarii sesiunii (logout) si navigarea in continuarea pe un site malitios</label><br>
+            <input type="checkbox" id="cunoastere_cheie_publica" name="q3" value="cunoastere_cheie_publica" checked disabled>
+            <label for="cunoastere_cheie_publica">Presupune cunoasterea de catre utilizator a cheii publice a autoritatii de certificare</label><br>
 
-    <input type="checkbox" id="javascript_injectat" name="q3" value="javascript_injectat">
-    <label for="javascript_injectat">Prin intermediul unui cod JavaScript injectat de catre atacator</label>
-</fieldset>
+            <input type="checkbox" id="cunoastere_cheie_privata" name="q3" value="cunoastere_cheie_privata">
+            <label for="cunoastere_cheie_privata">Presupune cunoasterea de catre utilizator a cheii private a autoritatii de certificare</label>
+        </fieldset>
 
-    
-        
         <br>
-    </form>
 
+        <fieldset>
+            <legend><strong>Intrebarea 4:</strong></legend>
+            <p>Pentru a asigura securitatea unei aplicatii web, unde este locul in care trebuie plasate validarile asupra datelor introduse de catre utilizatori?</p>
+
+            <input type="checkbox" id="validari_autorizare_client" name="q4" value="validari_autorizare_client">
+            <label for="validari_autorizare_client">Validarile privind autorizarea utilizatorilor de a efectua o actiune trebuie sa fie facute client-side, iar cele ce privesc integritatea datelor trebuie facute server-side</label><br>
+
+            <input type="checkbox" id="server_side" name="q4" value="server_side" checked disabled>
+            <label for="server_side">Server-side</label><br>
+
+            <input type="checkbox" id="client_side" name="q4" value="client_side">
+            <label for="client_side">Client-side</label>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend><strong>Intrebarea 5:</strong></legend>
+            <p>Cum se poate "fura" un cookie de sesiune al unui alt utilizator?</p>
+
+            <input type="checkbox" id="interceptare" name="q5" value="interceptare" checked disabled>
+            <label for="interceptare">Prin interceptarea datelor la nivelul retelei de transport in lipsa folosirii unei conexiuni sigure</label><br>
+
+            <input type="checkbox" id="lipsa_logout" name="q5" value="lipsa_logout">
+            <label for="lipsa_logout">Prin lipsa invalidarii sesiunii (logout) si navigarea in continuarea pe un site malitios</label><br>
+
+            <input type="checkbox" id="javascript_injectat" name="q5" value="javascript_injectat" checked disabled>
+            <label for="javascript_injectat">Prin intermediul unui cod JavaScript injectat de catre atacator</label>
+        </fieldset>
+
+        <br>
+
+    </form>
 </body>
 </html>
