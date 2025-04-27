@@ -2,7 +2,6 @@
 <html lang="ro">
 <head>
     <meta charset="UTF-8">
-    <title>Quiz Criptografie</title>
 </head>
 <body>
     <form>
@@ -88,7 +87,171 @@
             <label for="javascript_injectat">Prin intermediul unui cod JavaScript injectat de catre atacator</label>
         </fieldset>
 
+     
         <br>
+
+        <fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Diseminarea in siguranta catre terti a cheii publice a unei entitati se poate face:</p>
+
+    <input type="checkbox" id="diseminare_cheie_privata" name="q6" value="diseminare_cheie_privata">
+    <label for="diseminare_cheie_privata">Odata cu diseminarea spre terti a cheii private</label><br>
+
+    <input type="checkbox" id="canal_securizat" name="q6" value="canal_securizat" checked disabled>
+    <label for="canal_securizat">Pe un canal alternativ securizat, diferit de cel pe care urmeaza sa se faca comunicarea</label><br>
+
+    <input type="checkbox" id="certificat_semnat" name="q6" value="certificat_semnat" checked disabled>
+    <label for="certificat_semnat">Prin intermediul unui certificat digital semnat</label><br>
+
+    <input type="checkbox" id="cheie_publica_libera" name="q6" value="cheie_publica_libera" checked disabled>
+    <label for="cheie_publica_libera">Fiind vorba de cheia publica, nu trebuie luate masuri suplimentare de siguranta, toata lumea putand cunoaste aceasta cheie</label>
+</fieldset>
+
+     
+    <br>
+        <fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Semnarea unui document asigura:</p>
+
+    <input type="checkbox" id="datare_timp" name="q7" value="datare_timp" checked disabled>
+    <label for="datare_timp">Datarea in timp a documentului</label><br>
+
+    <input type="checkbox" id="confidentialitate_date" name="q7" value="confidentialitate_date">
+    <label for="confidentialitate_date">Confidentialitatea datelor continute in document</label><br>
+
+    <input type="checkbox" id="autenticitate" name="q7" value="autenticitate" checked disabled>
+    <label for="autenticitate">Autenticitatea documentului</label><br>
+
+    <input type="checkbox" id="nemodificare" name="q7" value="nemodificare" checked disabled>
+    <label for="nemodificare">Nemodificarea ulterioara a documentului</label>
+</fieldset>
+
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Cheia publica este folosita pentru:</p>
+
+    <input type="checkbox" id="criptarea_mesajelor" name="q8" value="criptarea_mesajelor" checked disabled>
+    <label for="criptarea_mesajelor">Criptarea mesajelor</label><br>
+
+    <input type="checkbox" id="verificarea_semanaturilor" name="q8" value="verificarea_semanaturilor" checked disabled>
+    <label for="verificarea_semanaturilor">Verificarea semnaturilor digitale</label><br>
+
+    <input type="checkbox" id="semnarea_documentelor" name="q8" value="semnarea_documentelor">
+    <label for="semnarea_documentelor">Semnarea documentelor</label><br>
+
+    <input type="checkbox" id="decriptarea_mesajelor" name="q8" value="decriptarea_mesajelor">
+    <label for="decriptarea_mesajelor">Decriptarea mesajelor</label>
+</fieldset>
+
+        <br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Cheia privata este folosita pentru:</p>
+
+    <input type="checkbox" id="decriptarea_mesajelor_primite" name="q9" value="decriptarea_mesajelor_primite" checked disabled>
+    <label for="decriptarea_mesajelor_primite">Decriptarea mesajelor primite</label><br>
+
+    <input type="checkbox" id="criptarea_mesajelor_trimise" name="q9" value="criptarea_mesajelor_trimise">
+    <label for="criptarea_mesajelor_trimise">Criptarea mesajelor trimise</label><br>
+
+    <input type="checkbox" id="verificarea_semanaturilor_digitale" name="q9" value="verificarea_semanaturilor_digitale">
+    <label for="verificarea_semanaturilor_digitale">Verificarea semnaturilor digitale</label><br>
+
+    <input type="checkbox" id="semnarea_documentelor" name="q9" value="semnarea_documentelor" checked disabled>
+    <label for="semnarea_documentelor">Semnarea documentelor</label>
+</fieldset>
+
+        <br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Care dintre urmatoarele afirmatii sunt adevarate in ceea ce priveste certificatele digitale Web client-side:</p>
+
+    <input type="checkbox" id="semnate_cu_aceeasi_cheie" name="q10" value="semnate_cu_aceeasi_cheie">
+    <label for="semnate_cu_aceeasi_cheie">Sunt semnate cu aceeasi cheie privata cu care este semnat si certificatul serverului Web</label><br>
+
+    <input type="checkbox" id="folosite_cu_ssl" name="q10" value="folosite_cu_ssl" checked disabled>
+    <label for="folosite_cu_ssl">Folosite impreuna cu protocolul SSL si cu autentificarea pe baza de user si parola sporesc securitatea autentificarii si identificarii clientului</label><br>
+
+    <input type="checkbox" id="transmise_pe_canal_sigur" name="q10" value="transmise_pe_canal_sigur" checked disabled>
+    <label for="transmise_pe_canal_sigur">Sunt transmise clientului exclusiv pe canale de incredere (sigure)</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Un certificat digital autosemnat:</p>
+
+    <input type="checkbox" id="contine_cheia_privata" name="q11" value="contine_cheia_privata">
+    <label for="contine_cheia_privata">Contine cheia privata corespunzatoare cheii publice cu care se face semnarea certificatului</label><br>
+
+    <input type="checkbox" id="contine_cheia_publica" name="q11" value="contine_cheia_publica" checked disabled>
+    <label for="contine_cheia_publica">Contine cheia publica corespunzatoare cheii private cu care se face semnarea certificatului</label><br>
+
+    <input type="checkbox" id="contine_cheia_publica_si_privata" name="q11" value="contine_cheia_publica_si_privata" checked disabled>
+    <label for="contine_cheia_publica_si_privata">Fiind autosemnat contine atat cheie publica cat si cheia privata corespunzatoare</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Care dintre urmatoarele reprezinta masuri pentru evitarea injectiilor SQL:</p>
+
+    <input type="checkbox" id="validari_backend_orm" name="q12" value="validari_backend_orm" checked disabled>
+    <label for="validari_backend_orm">Verificari riguroase la nivelul backend-ului legate de validitatea datelor introduse precum si folosirea de biblioteci specializate pentru persistarea datelor (ORM-uri)</label><br>
+
+    <input type="checkbox" id="dezactivare_sql_browser" name="q12" value="dezactivare_sql_browser">
+    <label for="dezactivare_sql_browser">Dezactivarea in cadrul aplicatiei Web a posibilitatii rularii de cod SQL de catre browser</label><br>
+
+    <input type="checkbox" id="validari_browser" name="q12" value="validari_browser">
+    <label for="validari_browser">Verificari riguroase la nivelul browserului legate de validitatea datelor introduse</label><br>
+
+    <input type="checkbox" id="prepared_statements" name="q12" value="prepared_statements" checked disabled>
+    <label for="prepared_statements">Folosirea la nivelul backend-ului de mecanisme de tipul "prepared statement"</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Pentru crearea unei infrastructuri bazate pe chei publice si private este necesar:</p>
+
+    <input type="checkbox" id="generare_pereche" name="q13" value="generare_pereche" checked disabled>
+    <label for="generare_pereche">Generarea perechii (cheie publica, cheie privata) implicate in procesul de semnare si verificare a certificatelor digitale emise</label><br>
+
+    <input type="checkbox" id="certificat_semnat_ca" name="q13" value="certificat_semnat_ca" checked disabled>
+    <label for="certificat_semnat_ca">Obtinearea unui certificat digital semnat de catre o autoritate de certificare recunoscuta</label><br>
+
+    <input type="checkbox" id="pereche_chei_de_la_ca" name="q13" value="pereche_chei_de_la_ca">
+    <label for="pereche_chei_de_la_ca">Obtinearea unei perechi (cheie publica, cheie privata) de la o autoritate de certificare recunoscuta</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Care este cel mai uzual mod de transmitere a unei chei publice catre terti:</p>
+
+    <input type="checkbox" id="canal_alternativ" name="q14" value="canal_alternativ">
+    <label for="canal_alternativ">Pe un canal alternativ care nu poate fi controlat de atacator</label><br>
+
+    <input type="checkbox" id="certificat_digital" name="q14" value="certificat_digital" checked disabled>
+    <label for="certificat_digital">In cadrul unui certificat digital</label><br>
+
+    <input type="checkbox" id="canal_comunicare_criptat" name="q14" value="canal_comunicare_criptat">
+    <label for="canal_comunicare_criptat">Pe un canal de comunicare criptat pentru a asigura confidentialitatea cheii</label><br>
+
+    <input type="checkbox" id="cheie_publica_neimportant" name="q14" value="cheie_publica_neimportant">
+    <label for="cheie_publica_neimportant">Fiind vorba de o cheie publica, nu este important ca, canalul pe care este transmisa sa fie sigur</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Cum se poate preveni o vulnerabilitate de tip SQL Injection?</p>
+
+    <input type="checkbox" id="limitare_lungime_parametri" name="q15" value="limitare_lungime_parametri" checked disabled>
+    <label for="limitare_lungime_parametri">Prin limitarea lungimii pentru fiecare dintre parametrii folositi in interogari</label><br>
+
+    <input type="checkbox" id="prepared_statements" name="q15" value="prepared_statements" checked disabled>
+    <label for="prepared_statements">Prin utilizarea de Prepared Statements</label><br>
+
+    <input type="checkbox" id="adaugare_apostroafe" name="q15" value="adaugare_apostroafe">
+    <label for="adaugare_apostroafe">Prin adaugarea de apostroafe in jurul parametrilor folositi in interogari</label>
+</fieldset>
 
     </form>
 </body>
