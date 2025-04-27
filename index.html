@@ -252,6 +252,355 @@
     <input type="checkbox" id="adaugare_apostroafe" name="q15" value="adaugare_apostroafe">
     <label for="adaugare_apostroafe">Prin adaugarea de apostroafe in jurul parametrilor folositi in interogari</label>
 </fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Un atac local presupune:</p>
+
+    <input type="checkbox" id="exploatare_vulnerabilitate" name="q16" value="exploatare_vulnerabilitate" checked disabled>
+    <label for="exploatare_vulnerabilitate">Exploatarea unei vulnerabilitati din cadrul unui proces server</label><br>
+
+    <input type="checkbox" id="accesare_sistem_consola" name="q16" value="accesare_sistem_consola" checked disabled>
+    <label for="accesare_sistem_consola">Accesarea unui sistem de la consola acestuia</label><br>
+
+    <input type="checkbox" id="escaladare_privilegii" name="q16" value="escaladare_privilegii" checked disabled>
+    <label for="escaladare_privilegii">Escaladarea de privilegii</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Care dintre urmatoarele tipuri de atacuri este asociat cu escaladarea de privilegii?</p>
+
+    <input type="checkbox" id="atacuri_ddos" name="q17" value="atacuri_ddos">
+    <label for="atacuri_ddos">Atacurile de tip DDOS</label><br>
+
+    <input type="checkbox" id="atacuri_remote" name="q17" value="atacuri_remote">
+    <label for="atacuri_remote">Atacurile remote</label><br>
+
+    <input type="checkbox" id="atacuri_locale" name="q17" value="atacuri_locale" checked disabled>
+    <label for="atacuri_locale">Atacurile locale</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Atacurile remote pot fi prevenite prin:</p>
+
+    <input type="checkbox" id="masuri_locale" name="q18" value="masuri_locale">
+    <label for="masuri_locale">Masuri de securitate impotriva atacurilor locale</label><br>
+
+    <input type="checkbox" id="update_sistem" name="q18" value="update_sistem" checked disabled>
+    <label for="update_sistem">Instalarea de update-uri sistemului de operare</label><br>
+
+    <input type="checkbox" id="folosire_firewall" name="q18" value="folosire_firewall" checked disabled>
+    <label for="folosire_firewall">Folosirea unui firewall</label><br>
+
+    <input type="checkbox" id="inchidere_porturi" name="q18" value="inchidere_porturi" checked disabled>
+    <label for="inchidere_porturi">Inchiderea porturilor si oprirea serviciilor inutile</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Prin shell code se intelege:</p>
+
+    <input type="checkbox" id="cod_limbaj_asamblare_unix" name="q19" value="cod_limbaj_asamblare_unix">
+    <label for="cod_limbaj_asamblare_unix">Codul in limbaj de asamblare al intrepretorului de comenzi Unix</label><br>
+
+    <input type="checkbox" id="exploit_fisier_comenzi" name="q19" value="exploit_fisier_comenzi">
+    <label for="exploit_fisier_comenzi">Un exploit descris intr-un fisier de comenzi si executat de catre shell-ul UNIX</label><br>
+
+    <input type="checkbox" id="cod_injectat_remote" name="q19" value="cod_injectat_remote" checked disabled>
+    <label for="cod_injectat_remote">Un cod scris de obicei in limbaj de asamblare si care este injectat remote de catre atacator</label>
+</fieldset>
+
+        <br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Vulnerabilitatile de tip Social Engineering se datoreaza:</p>
+
+    <input type="checkbox" id="rata_penetrare_noi_tehnologii" name="q20" value="rata_penetrare_noi_tehnologii" checked disabled>
+    <label for="rata_penetrare_noi_tehnologii">Ratei de penetrare mai ridicata a noilor tehnologii comparativ cu capacitatea de absorbtie si constientizare a utilizatorilor</label><br>
+
+    <input type="checkbox" id="vulnerabilitati_www" name="q20" value="vulnerabilitati_www">
+    <label for="vulnerabilitati_www">Vulnerabilitatilor descoperite periodic la nivelul Word Wide Web-ului</label><br>
+
+    <input type="checkbox" id="constrangeri_firewall" name="q20" value="constrangeri_firewall">
+    <label for="constrangeri_firewall">Constrangerilor insuficiente impuse de regulile de securitate ale unui firewall</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Care dintre urmatoarele reprezinta masuri pentru prevenirea atacurilor locale?</p>
+
+    <input type="checkbox" id="limitare_program_suid_sgid" name="q21" value="limitare_program_suid_sgid" checked disabled>
+    <label for="limitare_program_suid_sgid">Limitarea numarului de programe care au bitul SUID/SGID setat</label><br>
+
+    <input type="checkbox" id="schimbare_chroot" name="q21" value="schimbare_chroot" checked disabled>
+    <label for="schimbare_chroot">Schimbarea sistemului de fisiere in care ruleaza un proces server (chroot)</label><br>
+
+    <input type="checkbox" id="ruleaza_fara_superuser" name="q21" value="ruleaza_fara_superuser" checked disabled>
+    <label for="ruleaza_fara_superuser">Rularea serviciului nu ca super-user ci cu privilegiile unui utilizator obisnuit</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Succesul atacurilor remote asupra proceselor server vulnerabile se datoreaza:</p>
+
+    <input type="checkbox" id="modificari_stiva" name="q22" value="modificari_stiva" checked disabled>
+    <label for="modificari_stiva">Modificarilor pe stiva a adresei de revenire din cadrul unei functii</label><br>
+
+    <input type="checkbox" id="suprascriere_cod_remote" name="q22" value="suprascriere_cod_remote" checked disabled>
+    <label for="suprascriere_cod_remote">Suprascrierii stivei cu codul remote care se doreste a fi executat de catre atacator</label><br>
+
+    <input type="checkbox" id="invalidari_dimensiune_input" name="q22" value="invalidari_dimensiune_input" checked disabled>
+    <label for="invalidari_dimensiune_input">Invalidari insuficiente asupra dimensiunii datelor de intrare</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Din ce motive un atacator instaleaza pe un sistem compromis un rootkit?</p>
+
+    <input type="checkbox" id="portita_acces" name="q23" value="portita_acces" checked disabled>
+    <label for="portita_acces">Pentru a avea o portita de acces pentru accesarea ulterioara a sistemului</label><br>
+
+    <input type="checkbox" id="acces_root" name="q23" value="acces_root">
+    <label for="acces_root">Pentru a accesa sistemul ca root (superuser)</label><br>
+
+    <input type="checkbox" id="ascundere_urme" name="q23" value="ascundere_urme" checked disabled>
+    <label for="ascundere_urme">Pentru a-si ascunde urmele</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Detectarea unui virus poate fi ingreunata de:</p>
+
+    <input type="checkbox" id="caracter_metamorfic" name="q24" value="caracter_metamorfic" checked disabled>
+    <label for="caracter_metamorfic">Caracterului metamorfic al acestuia</label><br>
+
+    <input type="checkbox" id="suprascriere_apeluri_sistem" name="q24" value="suprascriere_apeluri_sistem" checked disabled>
+    <label for="suprascriere_apeluri_sistem">Suprascrierii anumitor apeluri sistem de catre virus</label><br>
+
+    <input type="checkbox" id="lipsa_multiplicare" name="q24" value="lipsa_multiplicare">
+    <label for="lipsa_multiplicare">Lipsa rutinei de multiplicare a virusului</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Care dintre urmatoarele afirmatii sunt adevarate despre virusi si viermi:</p>
+
+    <input type="checkbox" id="vierme_internet" name="q25" value="vierme_internet" checked disabled>
+    <label for="vierme_internet">Un vierme este un virus care se raspandeste folosind reteaua Internet</label><br>
+
+    <input type="checkbox" id="virusi_offline" name="q25" value="virusi_offline">
+    <label for="virusi_offline">Virusii se raspandesc exclusiv offline, in timp ce viermii se raspandesc prin intermediul retelei Internet</label><br>
+
+    <input type="checkbox" id="interactiune_umane" name="q25" value="interactiune_umane" checked disabled>
+    <label for="interactiune_umane">Virusii au nevoie pentru a se raspandi de interactiunea cu utilizatorul uman, pe cand viermii se raspundesc automat</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Vulnerabilitatile web pot duce la:</p>
+
+    <input type="checkbox" id="atac_remote_local" name="q26" value="atac_remote_local">
+    <label for="atac_remote_local">Un atac remote si continuarea acestuia cu unul local</label><br>
+
+    <input type="checkbox" id="modificare_firewall" name="q26" value="modificare_firewall">
+    <label for="modificare_firewall">Modificarea regulilor de firewall referitoare la portul 80 (HTTP) pentru a oferi atacatorului noi modalitati de acces</label><br>
+
+    <input type="checkbox" id="compromitere_site" name="q26" value="compromitere_site" checked disabled>
+    <label for="compromitere_site">Compromiterea continutului site-ului web ce contine o aplicatie web vulnerabila</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Care dintre urmatorii factori conduc la raspandirea mai agresiva a webworm-urilor?</p>
+
+    <input type="checkbox" id="omogenitate_aplicatii_web" name="q27" value="omogenitate_aplicatii_web" checked disabled>
+    <label for="omogenitate_aplicatii_web">Omogenitatea aplicatiilor web folosite in Internet</label><br>
+
+    <input type="checkbox" id="exportare_semnaturi" name="q27" value="exportare_semnaturi">
+    <label for="exportare_semnaturi">Exportarea de catre aplicatiile web a unei "semnaturi" ce indica numele si versiunea aplicatiei web</label><br>
+
+    <input type="checkbox" id="numar_mic_servere" name="q27" value="numar_mic_servere">
+    <label for="numar_mic_servere">Numarul relativ mic de server web folosite in Internet (Apache si IIS)</label><br>
+
+    <input type="checkbox" id="folosire_motoare_cautare" name="q27" value="folosire_motoare_cautare" checked disabled>
+    <label for="folosire_motoare_cautare">Folosirea motoarelor de cautare pentru a localiza alte sisteme vulnerabile</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Care dintre urmatoarele reprezinta proprietati ale shell codului injectat remote de catre un atacator:</p>
+
+    <input type="checkbox" id="numar_biti_kernel" name="q28" value="numar_biti_kernel" checked disabled>
+    <label for="numar_biti_kernel">Este scris pe acelasi numar de biti ca si nucleul sistemului de operare ce se doreste a fi atacat</label><br>
+
+    <input type="checkbox" id="adrese_absolute" name="q28" value="adrese_absolute">
+    <label for="adrese_absolute">Adresele in cadrul shell code-ului trebuie sa fie absolute, nu relative</label><br>
+
+    <input type="checkbox" id="fara_octeti_zero" name="q28" value="fara_octeti_zero" checked disabled>
+    <label for="fara_octeti_zero">De obicei nu trebuie sa contina octeti cu valoarea 0</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Epidemia datorata unui virus informatic este cu atat mai mare cu cat:</p>
+
+    <input type="checkbox" id="diversitate_sisteme_mica" name="q29" value="diversitate_sisteme_mica" checked disabled>
+    <label for="diversitate_sisteme_mica">Diversitatea sistemelor (din punct de vedere hardware si software) atacate este mai mica</label><br>
+
+    <input type="checkbox" id="factor_uman_nu_reactioneaza" name="q29" value="factor_uman_nu_reactioneaza" checked disabled>
+    <label for="factor_uman_nu_reactioneaza">Factorul uman in particular si societatea in general nu absorb suficient de rapid noile tehnologii pe care virusul le exploateaza</label><br>
+
+    <input type="checkbox" id="numar_mic_antivirus" name="q29" value="numar_mic_antivirus">
+    <label for="numar_mic_antivirus">Numarul de sisteme antivirus instalate pe sistemele atacate este mai mic</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Care dintre urmatorii factori fac ca un sistem de calcul sa fie mai susceptibil la atacuri:</p>
+
+    <input type="checkbox" id="programe_suidate" name="q30" value="programe_suidate" checked disabled>
+    <label for="programe_suidate">Programele SUID-ate</label><br>
+
+    <input type="checkbox" id="porturi_deschise" name="q30" value="porturi_deschise" checked disabled>
+    <label for="porturi_deschise">Porturile deschise</label><br>
+
+    <input type="checkbox" id="utilizatori_servicii" name="q30" value="utilizatori_servicii" checked disabled>
+    <label for="utilizatori_servicii">Utilizatorii sub care ruleaza anumite servicii</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Pentru a-si ascunde urmele, un atacator ce a compromis securitatea unui sistem poate folosi:</p>
+
+    <input type="checkbox" id="udp_spoofing" name="q31" value="udp_spoofing">
+    <label for="udp_spoofing">Pachete UDP avand adresa IP sursa falsificata (spoofing)</label><br>
+
+    <input type="checkbox" id="rootkit" name="q31" value="rootkit" checked disabled>
+    <label for="rootkit">Un rootkit</label><br>
+
+    <input type="checkbox" id="troian" name="q31" value="troian">
+    <label for="troian">Un troian</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Caracterul NULL ('\0') nu apare de obicei in string-ul ce reprezinta shell code-ul deoarece:</p>
+
+    <input type="checkbox" id="octet_zero_invalid" name="q32" value="octet_zero_invalid">
+    <label for="octet_zero_invalid">Octetul cu valoarea 0 nu reprezinta codul unei instructiuni valide in limbaj de asamblare</label><br>
+
+    <input type="checkbox" id="terminare_prematura" name="q32" value="terminare_prematura" checked disabled>
+    <label for="terminare_prematura">Majoritatea programelor exploatate sunt scrise in limbajul C, acest caracter ar marca terminarea prematura a datelor de intrare</label><br>
+
+    <input type="checkbox" id="00h_nu_adresa_valida" name="q32" value="00h_nu_adresa_valida" checked disabled>
+    <label for="00h_nu_adresa_valida">00h nu este o adresa de revenire valida in cadrul stivei</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Care dintre urmatoarele reprezinta masuri pentru prevenirea atacurilor locale?</p>
+
+    <input type="checkbox" id="schimbare_chroot" name="q33" value="schimbare_chroot" checked disabled>
+    <label for="schimbare_chroot">Schimbarea sistemului de fisiere in care ruleaza un proces server (chroot)</label><br>
+
+    <input type="checkbox" id="limitare_programe_suid" name="q33" value="limitare_programe_suid" checked disabled>
+    <label for="limitare_programe_suid">Limitarea numarului de programe care au bitul SUID/SGID setat</label><br>
+
+    <input type="checkbox" id="ruleaza_fara_superuser" name="q33" value="ruleaza_fara_superuser" checked disabled>
+    <label for="ruleaza_fara_superuser">Rularea serviciului nu ca super-user ci cu privilegiile unui utilizator obisnuit</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Care dintre urmatoarele afirmatii despre un "exploit" sunt adevarate:</p>
+
+    <input type="checkbox" id="validari_insuficiente" name="q34" value="validari_insuficiente" checked disabled>
+    <label for="validari_insuficiente">Se bazeaza pe validari insuficiente ale datelor de intrare</label><br>
+
+    <input type="checkbox" id="doar_remote" name="q34" value="doar_remote">
+    <label for="doar_remote">Este folosit doar pentru atacuri remote</label><br>
+
+    <input type="checkbox" id="acelasi_limbaj" name="q34" value="acelasi_limbaj">
+    <label for="acelasi_limbaj">Trebuie scris in acelasi limbaj ca si cel in care este scris programul atacat</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Vulnerabilitatile de tip Social Engineering se datoreaza:</p>
+
+    <input type="checkbox" id="constrangeri_firewall" name="q35" value="constrangeri_firewall">
+    <label for="constrangeri_firewall">Constrangerilor insuficiente impuse de regulile de securitate ale unui firewall</label><br>
+
+    <input type="checkbox" id="penetrare_rapida_tehnologii" name="q35" value="penetrare_rapida_tehnologii" checked disabled>
+    <label for="penetrare_rapida_tehnologii">Ratei de penetrare mai ridicata a noilor tehnologii comparativ cu capacitatea de absorbtie a acestora</label><br>
+
+    <input type="checkbox" id="vulnerabilitati_www" name="q35" value="vulnerabilitati_www">
+    <label for="vulnerabilitati_www">Vulnerabilitatilor descoperite periodic la nivelul Word Wide Web-ului</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Vulnerabilitatile web pot duce la:</p>
+
+    <input type="checkbox" id="atac_remote_local" name="q36" value="atac_remote_local">
+    <label for="atac_remote_local">Un atac remote si continuarea acestuia cu unul local</label><br>
+
+    <input type="checkbox" id="modificare_firewall" name="q36" value="modificare_firewall">
+    <label for="modificare_firewall">Modificarea regulilor de firewall referitoare la portul 80 (HTTP) pentru a oferi atacatorului noi modalitati de acces</label><br>
+
+    <input type="checkbox" id="compromitere_site_web" name="q36" value="compromitere_site_web" checked disabled>
+    <label for="compromitere_site_web">Compromiterea continutului site-ului web ce contine o aplicatie web vulnerabila</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Detectarea unui virus poate fi ingreunata de:</p>
+
+    <input type="checkbox" id="suprascriere_apeluri" name="q37" value="suprascriere_apeluri" checked disabled>
+    <label for="suprascriere_apeluri">Suprascrierii anumitor apeluri sistem de catre virus</label><br>
+
+    <input type="checkbox" id="lipsa_multiplicare" name="q37" value="lipsa_multiplicare">
+    <label for="lipsa_multiplicare">Lipsa rutinei de multiplicare a virusului</label><br>
+
+    <input type="checkbox" id="caracter_metamorfic" name="q37" value="caracter_metamorfic" checked disabled>
+    <label for="caracter_metamorfic">Caracterului metamorfic al acestuia</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Atacurile locale se bazeaza pe:</p>
+
+    <input type="checkbox" id="vulnerabilitati_suid" name="q38" value="vulnerabilitati_suid" checked disabled>
+    <label for="vulnerabilitati_suid">Vulnerabilitati in programele care au bitul SUID setat</label><br>
+
+    <input type="checkbox" id="vulnerabilitati_procese" name="q38" value="vulnerabilitati_procese" checked disabled>
+    <label for="vulnerabilitati_procese">Vulnerabilitati in diverse procese server</label><br>
+
+    <input type="checkbox" id="vulnerabilitati_apeluri" name="q38" value="vulnerabilitati_apeluri" checked disabled>
+    <label for="vulnerabilitati_apeluri">Vulnerabilitati la nivelul apelurilor sistem oferite de catre sistemul de operare</label><br>
+
+    <input type="checkbox" id="lipsa_securitate_fizica" name="q38" value="lipsa_securitate_fizica" checked disabled>
+    <label for="lipsa_securitate_fizica">Lipsa securitatii fizice a sistemului si a liberului acces la consola acestuia</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Pentru limitarea atacurilor Web se recomanda:</p>
+
+    <input type="checkbox" id="audit_cod_server" name="q39" value="audit_cod_server" checked disabled>
+    <label for="audit_cod_server">Auditul codului server side si folosirea de librarii specializate consacrate pentru efectuarea validarilor</label><br>
+
+    <input type="checkbox" id="mecanisme_securitate_server" name="q39" value="mecanisme_securitate_server" checked disabled>
+    <label for="mecanisme_securitate_server">Folosirea unor mecanisme de securitate complementare precum diferite module de securitate la nivelul serverului web (spre exemplu mod_security pe Apache)</label><br>
+
+    <input type="checkbox" id="actualizare_aplicatii" name="q39" value="actualizare_aplicatii" checked disabled>
+    <label for="actualizare_aplicatii">In cazul folosirii de aplicatii web larg raspandite in Internet, actualizarea periodica a acestora si urmarirea listelor de discutii si a anunturilor dezvoltatorilor</label><br>
+
+    <input type="checkbox" id="folosire_https" name="q39" value="folosire_https" checked disabled>
+    <label for="folosire_https">Folosirea protocolului https in locul protocolului http pentru a accesa aplicatia web</label>
+</fieldset>
 
     </form>
 </body>
