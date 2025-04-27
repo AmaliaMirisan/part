@@ -257,10 +257,10 @@
     <legend><strong>Intrebarea:</strong></legend>
     <p>Un atac local presupune:</p>
 
-    <input type="checkbox" id="exploatare_vulnerabilitate" name="q16" value="exploatare_vulnerabilitate" checked disabled>
+    <input type="checkbox" id="exploatare_vulnerabilitate" name="q16" value="exploatare_vulnerabilitate" >
     <label for="exploatare_vulnerabilitate">Exploatarea unei vulnerabilitati din cadrul unui proces server</label><br>
 
-    <input type="checkbox" id="accesare_sistem_consola" name="q16" value="accesare_sistem_consola" checked disabled>
+    <input type="checkbox" id="accesare_sistem_consola" name="q16" value="accesare_sistem_consola" >
     <label for="accesare_sistem_consola">Accesarea unui sistem de la consola acestuia</label><br>
 
     <input type="checkbox" id="escaladare_privilegii" name="q16" value="escaladare_privilegii" checked disabled>
@@ -334,7 +334,7 @@
     <input type="checkbox" id="limitare_program_suid_sgid" name="q21" value="limitare_program_suid_sgid" checked disabled>
     <label for="limitare_program_suid_sgid">Limitarea numarului de programe care au bitul SUID/SGID setat</label><br>
 
-    <input type="checkbox" id="schimbare_chroot" name="q21" value="schimbare_chroot" checked disabled>
+    <input type="checkbox" id="schimbare_chroot" name="q21" value="schimbare_chroot">
     <label for="schimbare_chroot">Schimbarea sistemului de fisiere in care ruleaza un proces server (chroot)</label><br>
 
     <input type="checkbox" id="ruleaza_fara_superuser" name="q21" value="ruleaza_fara_superuser" checked disabled>
@@ -362,7 +362,7 @@
     <input type="checkbox" id="portita_acces" name="q23" value="portita_acces" checked disabled>
     <label for="portita_acces">Pentru a avea o portita de acces pentru accesarea ulterioara a sistemului</label><br>
 
-    <input type="checkbox" id="acces_root" name="q23" value="acces_root" checked disabled>
+    <input type="checkbox" id="acces_root" name="q23" value="acces_root">
     <label for="acces_root">Pentru a accesa sistemul ca root (superuser)</label><br>
 
     <input type="checkbox" id="ascundere_urme" name="q23" value="ascundere_urme" checked disabled>
@@ -467,7 +467,7 @@
     <input type="checkbox" id="porturi_deschise" name="q30" value="porturi_deschise" checked disabled>
     <label for="porturi_deschise">Porturile deschise</label><br>
 
-    <input type="checkbox" id="utilizatori_servicii" name="q30" value="utilizatori_servicii" checked disabled>
+    <input type="checkbox" id="utilizatori_servicii" name="q30" value="utilizatori_servicii">
     <label for="utilizatori_servicii">Utilizatorii sub care ruleaza anumite servicii</label>
 </fieldset>
 <br>
@@ -495,7 +495,7 @@
     <input type="checkbox" id="terminare_prematura" name="q32" value="terminare_prematura" checked disabled>
     <label for="terminare_prematura">Majoritatea programelor exploatate sunt scrise in limbajul C, acest caracter ar marca terminarea prematura a datelor de intrare</label><br>
 
-    <input type="checkbox" id="00h_nu_adresa_valida" name="q32" value="00h_nu_adresa_valida" checked disabled>
+    <input type="checkbox" id="00h_nu_adresa_valida" name="q32" value="00h_nu_adresa_valida" >
     <label for="00h_nu_adresa_valida">00h nu este o adresa de revenire valida in cadrul stivei</label>
 </fieldset>
 <br>
@@ -503,7 +503,7 @@
     <legend><strong>Intrebarea:</strong></legend>
     <p>Care dintre urmatoarele reprezinta masuri pentru prevenirea atacurilor locale?</p>
 
-    <input type="checkbox" id="schimbare_chroot" name="q33" value="schimbare_chroot" checked disabled>
+    <input type="checkbox" id="schimbare_chroot" name="q33" value="schimbare_chroot" >
     <label for="schimbare_chroot">Schimbarea sistemului de fisiere in care ruleaza un proces server (chroot)</label><br>
 
     <input type="checkbox" id="limitare_programe_suid" name="q33" value="limitare_programe_suid" checked disabled>
@@ -576,10 +576,10 @@
     <input type="checkbox" id="vulnerabilitati_suid" name="q38" value="vulnerabilitati_suid" checked disabled>
     <label for="vulnerabilitati_suid">Vulnerabilitati in programele care au bitul SUID setat</label><br>
 
-    <input type="checkbox" id="vulnerabilitati_procese" name="q38" value="vulnerabilitati_procese" checked disabled>
+    <input type="checkbox" id="vulnerabilitati_procese" name="q38" value="vulnerabilitati_procese">
     <label for="vulnerabilitati_procese">Vulnerabilitati in diverse procese server</label><br>
 
-    <input type="checkbox" id="vulnerabilitati_apeluri" name="q38" value="vulnerabilitati_apeluri" checked disabled>
+    <input type="checkbox" id="vulnerabilitati_apeluri" name="q38" value="vulnerabilitati_apeluri">
     <label for="vulnerabilitati_apeluri">Vulnerabilitati la nivelul apelurilor sistem oferite de catre sistemul de operare</label><br>
 
     <input type="checkbox" id="lipsa_securitate_fizica" name="q38" value="lipsa_securitate_fizica" checked disabled>
@@ -590,10 +590,10 @@
     <legend><strong>Intrebarea:</strong></legend>
     <p>Pentru limitarea atacurilor Web se recomanda:</p>
 
-    <input type="checkbox" id="audit_cod_server" name="q39" value="audit_cod_server" checked disabled>
+    <input type="checkbox" id="audit_cod_server" name="q39" value="audit_cod_server">
     <label for="audit_cod_server">Auditul codului server side si folosirea de librarii specializate consacrate pentru efectuarea validarilor</label><br>
 
-    <input type="checkbox" id="mecanisme_securitate_server" name="q39" value="mecanisme_securitate_server" checked disabled>
+    <input type="checkbox" id="mecanisme_securitate_server" name="q39" value="mecanisme_securitate_server">
     <label for="mecanisme_securitate_server">Folosirea unor mecanisme de securitate complementare precum diferite module de securitate la nivelul serverului web (spre exemplu mod_security pe Apache)</label><br>
 
     <input type="checkbox" id="actualizare_aplicatii" name="q39" value="actualizare_aplicatii" checked disabled>
