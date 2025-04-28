@@ -113,7 +113,7 @@
     <legend><strong>Intrebarea:</strong></legend>
     <p>Semnarea unui document asigura:</p>
 
-    <input type="checkbox" id="datare_timp" name="q7" value="datare_timp" checked disabled>
+    <input type="checkbox" id="datare_timp" name="q7" value="datare_timp" >
     <label for="datare_timp">Datarea in timp a documentului</label><br>
 
     <input type="checkbox" id="confidentialitate_date" name="q7" value="confidentialitate_date">
@@ -187,7 +187,7 @@
     <input type="checkbox" id="contine_cheia_publica" name="q11" value="contine_cheia_publica" checked disabled>
     <label for="contine_cheia_publica">Contine cheia publica corespunzatoare cheii private cu care se face semnarea certificatului</label><br>
 
-    <input type="checkbox" id="contine_cheia_publica_si_privata" name="q11" value="contine_cheia_publica_si_privata" checked disabled>
+    <input type="checkbox" id="contine_cheia_publica_si_privata" name="q11" value="contine_cheia_publica_si_privata">
     <label for="contine_cheia_publica_si_privata">Fiind autosemnat contine atat cheie publica cat si cheia privata corespunzatoare</label>
 </fieldset>
 <br>
@@ -243,7 +243,7 @@
     <legend><strong>Intrebarea:</strong></legend>
     <p>Cum se poate preveni o vulnerabilitate de tip SQL Injection?</p>
 
-    <input type="checkbox" id="limitare_lungime_parametri" name="q15" value="limitare_lungime_parametri" checked disabled>
+    <input type="checkbox" id="limitare_lungime_parametri" name="q15" value="limitare_lungime_parametri" >
     <label for="limitare_lungime_parametri">Prin limitarea lungimii pentru fiecare dintre parametrii folositi in interogari</label><br>
 
     <input type="checkbox" id="prepared_statements" name="q15" value="prepared_statements" checked disabled>
@@ -334,7 +334,7 @@
     <input type="checkbox" id="limitare_program_suid_sgid" name="q21" value="limitare_program_suid_sgid" checked disabled>
     <label for="limitare_program_suid_sgid">Limitarea numarului de programe care au bitul SUID/SGID setat</label><br>
 
-    <input type="checkbox" id="schimbare_chroot" name="q21" value="schimbare_chroot">
+    <input type="checkbox" id="schimbare_chroot" name="q21" value="schimbare_chroot" checked disabled>
     <label for="schimbare_chroot">Schimbarea sistemului de fisiere in care ruleaza un proces server (chroot)</label><br>
 
     <input type="checkbox" id="ruleaza_fara_superuser" name="q21" value="ruleaza_fara_superuser" checked disabled>
@@ -419,10 +419,10 @@
     <input type="checkbox" id="omogenitate_aplicatii_web" name="q27" value="omogenitate_aplicatii_web" checked disabled>
     <label for="omogenitate_aplicatii_web">Omogenitatea aplicatiilor web folosite in Internet</label><br>
 
-    <input type="checkbox" id="exportare_semnaturi" name="q27" value="exportare_semnaturi">
+    <input type="checkbox" id="exportare_semnaturi" name="q27" value="exportare_semnaturi" checked disabled>
     <label for="exportare_semnaturi">Exportarea de catre aplicatiile web a unei "semnaturi" ce indica numele si versiunea aplicatiei web</label><br>
 
-    <input type="checkbox" id="numar_mic_servere" name="q27" value="numar_mic_servere">
+    <input type="checkbox" id="numar_mic_servere" name="q27" value="numar_mic_servere" checked disabled>
     <label for="numar_mic_servere">Numarul relativ mic de server web folosite in Internet (Apache si IIS)</label><br>
 
     <input type="checkbox" id="folosire_motoare_cautare" name="q27" value="folosire_motoare_cautare" checked disabled>
@@ -590,10 +590,10 @@
     <legend><strong>Intrebarea:</strong></legend>
     <p>Pentru limitarea atacurilor Web se recomanda:</p>
 
-    <input type="checkbox" id="audit_cod_server" name="q39" value="audit_cod_server">
+    <input type="checkbox" id="audit_cod_server" name="q39" value="audit_cod_server" checked disabled>
     <label for="audit_cod_server">Auditul codului server side si folosirea de librarii specializate consacrate pentru efectuarea validarilor</label><br>
 
-    <input type="checkbox" id="mecanisme_securitate_server" name="q39" value="mecanisme_securitate_server">
+    <input type="checkbox" id="mecanisme_securitate_server" name="q39" value="mecanisme_securitate_server" checked disabled>
     <label for="mecanisme_securitate_server">Folosirea unor mecanisme de securitate complementare precum diferite module de securitate la nivelul serverului web (spre exemplu mod_security pe Apache)</label><br>
 
     <input type="checkbox" id="actualizare_aplicatii" name="q39" value="actualizare_aplicatii" checked disabled>
@@ -607,13 +607,13 @@
     <legend><strong>Intrebarea:</strong></legend>
     <p>Care dintre urmatoarele reprezinta vulnerabilitati celebre din ultima perioada:</p>
 
-    <input type="checkbox" id="heartbleed" name="q40" value="heartbleed">
+    <input type="checkbox" id="heartbleed" name="q40" value="heartbleed" checked disabled>
     <label for="heartbleed">Heartbleed</label><br>
 
-    <input type="checkbox" id="basshole" name="q40" value="basshole" checked disabled>
+    <input type="checkbox" id="basshole" name="q40" value="basshole">
     <label for="basshole">Basshole</label><br>
 
-    <input type="checkbox" id="shellshock" name="q40" value="shellshock">
+    <input type="checkbox" id="shellshock" name="q40" value="shellshock" checked disabled>
     <label for="shellshock">Shellshock</label>
 </fieldset>
 <br>
@@ -955,6 +955,252 @@
     <input type="checkbox" id="inlocui" name="q52" value="inlocui">
     <label for="inlocui">atacatorul poate inlocui cheia privata din certificat cu propria cheie privata, corespunzatoare unei chei publice pe care ac esta o detine</label>
 </fieldset>
+        <br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Care dintre urmatoarele afirmatii despre procesul de schimb de chei sunt adevarate in contextul folosirii algoritmilor de criptare simetrici, respectiv asimetrici:</p>
+
+    <input type="checkbox" id="schimb_chei_aceeasi_canal" name="q64" value="schimb_chei_aceeasi_canal" checked disabled>
+    <label for="schimb_chei_aceeasi_canal">In ambele situatii, schimbul de chei se poate realiza pe acelasi canal / prin acelasi mecanism prin care are loc si comunicarea</label><br>
+
+    <input type="checkbox" id="schimb_chei_asimetric" name="q64" value="schimb_chei_asimetric">
+    <label for="schimb_chei_asimetric">Schimbul de chei pe un alt canal / mecanism diferit de comunicare alternativ trebuie sa se realizeze doar in cazul algoritmilor de criptare asimetrici</label><br>
+
+    <input type="checkbox" id="schimb_chei_simetric" name="q64" value="schimb_chei_simetric" checked disabled>
+    <label for="schimb_chei_simetric">Schimbul de chei pe un alt canal / mecanism diferit de comunicare alternativ trebuie sa se realizeze doar in cazul algoritmilor de criptare simetrici</label><br>
+
+    <input type="checkbox" id="schimb_chei_alt_canal" name="q64" value="schimb_chei_alt_canal">
+    <label for="schimb_chei_alt_canal">In ambele situatii, schimbul de chei trebuie sa se desfasoare pe un alt canal / printr-un mecanism de comunicare alternativ</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Care este pericolul interceptarii de catre un tert (Man in the Middle) a unei chei publice din cadrul unui certificat digital semnat de catre o autoritate de certificare si transmis pe un canal nesigur?</p>
+
+    <input type="checkbox" id="inlocuire_cheie_publica" name="q67" value="inlocuire_cheie_publica">
+    <label for="inlocuire_cheie_publica">Atacatorul poate inlocui cheia publica din certificat cu propria cheie publica, corespunzatoare unei chei private pe care acesta o detine</label><br>
+
+    <input type="checkbox" id="nu_exista_pericol" name="q67" value="nu_exista_pericol" checked disabled>
+    <label for="nu_exista_pericol">Nu exista niciun pericol, destinatarul la care ajunge certificatul il poate valida pe baza semnaturii depuse de autoritatea de certificare</label><br>
+
+    <input type="checkbox" id="inlocuire_cheie_privata" name="q67" value="inlocuire_cheie_privata">
+    <label for="inlocuire_cheie_privata">Atacatorul poate inlocui cheia privata din certificat cu propria cheie privata, corespunzatoare unei chei publice pe care acesta o detine</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Care dintre urmatoarele reprezinta masuri pentru evitarea vulnerabilitatilor de tip XSS?</p>
+
+    <input type="checkbox" id="inlocuire_caractere" name="q9" value="inlocuire_caractere" checked disabled>
+    <label for="inlocuire_caractere">Inlocuirea anumitor caractere din datele primite de la client cu entitatile HTML corespunzatoare</label><br>
+
+    <input type="checkbox" id="folosire_biblioteci_browser" name="q9" value="folosire_biblioteci_browser">
+    <label for="folosire_biblioteci_browser">Folosirea la nivelul browserului a unor biblioteci de functii JavaScript consacrate si testate anterior</label><br>
+
+    <input type="checkbox" id="dezactivare_cod_js" name="q9" value="dezactivare_cod_js">
+    <label for="dezactivare_cod_js">Dezactivarea din cadrul aplicatiei web a posibilitatii rulării de cod JavaScript de catre browser</label><br>
+
+    <input type="checkbox" id="verificari_browser" name="q9" value="verificari_browser">
+    <label for="verificari_browser">Verificari riguroase la nivelul browserului legate de validitatea datelor introduse</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Care este pericolul compromiterii unui certificat digital emis unui site Web in scopul autentificarii acestuia de catre clienti?</p>
+
+    <input type="checkbox" id="extrage_cheie_publica" name="q21" value="extrage_cheie_publica" checked disabled>
+    <label for="extrage_cheie_publica">Se poate extrage cheia publica din acel certificat, dar acest fapt nu reprezinta un pericol</label><br>
+
+    <input type="checkbox" id="extrage_cheie_privata" name="q21" value="extrage_cheie_privata">
+    <label for="extrage_cheie_privata">Se poate extrage cheia privata din acel certificat</label><br>
+
+    <input type="checkbox" id="semna_documente" name="q21" value="semna_documente">
+    <label for="semna_documente">Se pot semna documente in numele site-ului web respectiv</label><br>
+
+    <input type="checkbox" id="nu_exista_pericol" name="q21" value="nu_exista_pericol">
+    <label for="nu_exista_pericol">Nu exista niciun pericol</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Care dintre urmatoarele reprezinta scheme de validare a unui certificat digital?</p>
+
+    <input type="checkbox" id="dcvp" name="q24" value="dcvp">
+    <label for="dcvp">DCVP - Digital Certificate Validation Process</label><br>
+
+    <input type="checkbox" id="ocsp" name="q24" value="ocsp" checked disabled>
+    <label for="ocsp">OCSP - Online Certificate Status Protocol</label><br>
+
+    <input type="checkbox" id="crls" name="q24" value="crls" checked disabled>
+    <label for="crls">CRLs - Certificate Revocation Lists</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Exploiturile pot fi folosite pentru a ataca:</p>
+
+    <input type="checkbox" id="aplicatii_web" name="q52" value="aplicatii_web" checked disabled>
+    <label for="aplicatii_web">Aplicatii web</label><br>
+
+    <input type="checkbox" id="aplicatii_client" name="q52" value="aplicatii_client" checked disabled>
+    <label for="aplicatii_client">Aplicatii client</label><br>
+
+    <input type="checkbox" id="procese_server" name="q52" value="procese_server" checked disabled>
+    <label for="procese_server">Procese server</label><br>
+
+    <input type="checkbox" id="orice_proces" name="q52" value="orice_proces" checked disabled>
+    <label for="orice_proces">Orice proces care citeste date de intrare</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Care este scopul unui "honeypot"?</p>
+
+    <input type="checkbox" id="atragere_atacatori" name="q53" value="atragere_atacatori" checked disabled>
+    <label for="atragere_atacatori">Atragerea atacatorilor pentru a le monitoriza si intelege tacticile</label><br>
+
+    <input type="checkbox" id="protejare_date" name="q53" value="protejare_date" disabled>
+    <label for="protejare_date">Protejarea datelor mai sensibile prin criptarea acestora intr-un "honeypot"</label><br>
+
+    <input type="checkbox" id="identificare_eliminare" name="q53" value="identificare_eliminare" disabled>
+    <label for="identificare_eliminare">Identificarea si eliminarea software-ului malitios prin rularea acestuia intr-o masina virtuala "honeypot"</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Ce inseamna un exploit de tip "zero-day"?</p>
+
+    <input type="checkbox" id="zero_day_exploit" name="q54" value="zero_day_exploit" checked disabled>
+    <label for="zero_day_exploit">Un atac care exploateaza o vulnerabilitate de securitate care nu este inca cunoscuta de catre dezvoltatorii software</label><br>
+
+    <input type="checkbox" id="tactica_securitate" name="q54" value="tactica_securitate" disabled>
+    <label for="tactica_securitate">Tactica de securitate folosita pentru a preveni accesul neautorizat la o retea</label><br>
+
+    <input type="checkbox" id="tip_criptare" name="q54" value="tip_criptare" disabled>
+    <label for="tip_criptare">Un tip de criptare folosit pentru a proteja date sensibile</label><br>
+
+    <input type="checkbox" id="exploit_ziua_zero" name="q54" value="exploit_ziua_zero" disabled>
+    <label for="exploit_ziua_zero">Un exploit folosit in prima zi ("ziua zero") dupa lansarea unui patch pentru o anumita vulnerabilitate</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Ce presupune un atac de tip "phishing"?</p>
+
+    <input type="checkbox" id="spargere_server" name="q55" value="spargere_server" disabled>
+    <label for="spargere_server">Spargerea sistemelor server (site web, server de date) apartinand unei institutii bancare</label><br>
+
+    <input type="checkbox" id="clonare_site" name="q55" value="clonare_site" checked disabled>
+    <label for="clonare_site">Clonarea unui site web legitim</label><br>
+
+    <input type="checkbox" id="trimitere_emailuri" name="q55" value="trimitere_emailuri" checked disabled>
+    <label for="trimitere_emailuri">Trimiterea de e-mailuri in masa prin care destinatarii sunt invitati sa isi divulge datele personale</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Ce este ingineria socială (social engineering)?</p>
+
+    <input type="checkbox" id="manipulare_psihologica" name="q57" value="manipulare_psihologica" checked disabled>
+    <label for="manipulare_psihologica">Utilizarea manipulării psihologice pentru a obține informații confidențiale de la diverse persoane</label><br>
+
+    <input type="checkbox" id="gestiune_proceselor" name="q57" value="gestiune_proceselor" disabled>
+    <label for="gestiune_proceselor">Metodă de gestionare a proceselor existente la nivelul societății umane</label><br>
+
+    <input type="checkbox" id="protectie_societate" name="q57" value="protectie_societate" disabled>
+    <label for="protectie_societate">Modul în care societatea își definește propriile procese de (auto) protecție în fața pericolelor</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Întrebarea:</strong></legend>
+    <p>Ce este un „ransomware”?</p>
+
+    <input type="checkbox" id="software_malicios" name="q58" value="software_malicios" checked disabled>
+    <label for="software_malicios">Un tip de software malițios care blochează accesul utilizatorului la sistemele sau datele sale și solicită o răscumpărare pentru deblocare</label><br>
+
+    <input type="checkbox" id="instrument_criptare" name="q58" value="instrument_criptare" disabled>
+    <label for="instrument_criptare">Un instrument de criptare folosit pentru a proteja date sensibile</label><br>
+
+    <input type="checkbox" id="atac_stergere" name="q58" value="atac_stergere" disabled>
+    <label for="atac_stergere">Un tip de atac care vizează ștergerea datelor critice</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Întrebarea:</strong></legend>
+    <p>Un rootkit este folosit pentru:</p>
+
+    <input type="checkbox" id="ascundere_urme" name="q61" value="ascundere_urme" checked disabled>
+    <label for="ascundere_urme">Ascunderea urmelor lăsate de un atacator</label><br>
+
+    <input type="checkbox" id="backdoor_acces" name="q61" value="backdoor_acces" checked disabled>
+    <label for="backdoor_acces">Oferirea unei porțițe de acces (backdoor) atacatorului</label><br>
+
+    <input type="checkbox" id="atac_distanta" name="q61" value="atac_distanta" disabled>
+    <label for="atac_distanta">Atacarea de la distanță a unui sistem</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Întrebarea:</strong></legend>
+    <p>"Vulnerability window" înseamnă:</p>
+
+    <input type="checkbox" id="prima_exploatare" name="q62" value="prima_exploatare">
+    <label for="prima_exploatare">Intervalul de timp dintre prima exploatare a unei vulnerabilități și dezvoltarea unui patch pentru acea vulnerabilitate</label><br>
+
+    <input type="checkbox" id="descoperire_patch" name="q62" value="descoperire_patch" checked disabled>
+    <label for="descoperire_patch">Intervalul de timp dintre descoperirea unei vulnerabilități într-o aplicație software și dezvoltarea unui patch pentru această vulnerabilitate</label><br>
+
+    <input type="checkbox" id="infectare_dezinfectare" name="q62" value="infectare_dezinfectare">
+    <label for="infectare_dezinfectare">Intervalul de timp dintre infectarea sistemului și dezinfectarea acestuia</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Întrebarea:</strong></legend>
+    <p>Rețelele „BotNet” sunt folosite, în general, pentru:</p>
+
+    <input type="checkbox" id="atac_ddos" name="q63" value="atac_ddos" checked disabled>
+    <label for="atac_ddos">Atacuri de tip DDoS</label><br>
+
+    <input type="checkbox" id="utilizare_distribuita" name="q63" value="utilizare_distribuita" checked disabled>
+    <label for="utilizare_distribuita">Utilizarea distribuită a puterii de procesare a computerelor pentru sarcini care necesită resurse mari, cum ar fi: spargerea parolelor, decriptarea, minarea de criptomonede</label><br>
+
+    <input type="checkbox" id="spam_email" name="q63" value="spam_email" checked disabled>
+    <label for="spam_email">Trimiterea de e-mailuri nesolicitate (spam)</label><br>
+
+    <input type="checkbox" id="navigare_web" name="q63" value="navigare_web">
+    <label for="navigare_web">Navigarea web în mod anonim și sigur</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Întrebarea:</strong></legend>
+    <p>Ce este un atac de tip „Man-in-the-Middle” (MitM)?</p>
+
+    <input type="checkbox" id="interceptare_modificare" name="q64" value="interceptare_modificare" checked disabled>
+    <label for="interceptare_modificare">Un atac in care atacatorul intercepteaza si modifica comunicarile dintre doua entitati</label><br>
+
+    <input type="checkbox" id="identificare_identitate" name="q64" value="identificare_identitate">
+    <label for="identificare_identitate">Un proces de identificare a identitatii unui utilizator legitim intr-o retea</label><br>
+
+    <input type="checkbox" id="intrerupere_servicii" name="q64" value="intrerupere_servicii">
+    <label for="intrerupere_servicii">Un atac care are ca scop intreruperea serviciilor oferite de un sistem informatic</label>
+</fieldset>
+<fieldset>
+    <legend><strong>Întrebarea:</strong></legend>
+    <p>Macrovirușii au următoarele avantaje față de un virus clasic scris în limbaj de asamblare:</p>
+
+    <input type="checkbox" id="retele_enterprise" name="q65" value="retele_enterprise" checked disabled>
+    <label for="retele_enterprise">Găsesc în rețelele Enterprise, unde există un flux mare de documente, un mediu perfect pentru răspândire</label><br>
+
+    <input type="checkbox" id="independenti_platforma" name="q65" value="independenti_platforma" checked disabled>
+    <label for="independenti_platforma">Sunt independenți de platformă, fiind scriși în limbaje de tip scripting</label><br>
+
+    <input type="checkbox" id="payload_mic" name="q65" value="payload_mic" disabled>
+    <label for="payload_mic">Sarcina malițioasă (payload) adăugată de virus în fișierul infectat ocupă mai puțin spațiu</label><br>
+
+    <input type="checkbox" id="antivirus_semnaturi" name="q65" value="antivirus_semnaturi" disabled>
+    <label for="antivirus_semnaturi">Prin infectarea fișierelor Office, cum ar fi documente Word sau Excel, nu pot fi detectați de antivirușii bazați pe semnături</label>
+</fieldset>
+
+
     </form>
 </body>
 </html>
