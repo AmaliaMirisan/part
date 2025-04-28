@@ -627,7 +627,7 @@
     <input type="checkbox" id="xss" name="q44" value="xss" checked disabled>
     <label for="xss">Cross-Site Scripting (XSS)</label><br>
 
-    <input type="checkbox" id="csrf" name="q44" value="csrf" checked disabled>
+    <input type="checkbox" id="csrf" name="q44" value="csrf">
     <label for="csrf">Cross-Site Request Forgery (CSRF)</label>
 </fieldset>
 <br>
@@ -748,7 +748,7 @@
     <input type="checkbox" id="semnate_cheie_server" name="q52" value="semnate_cheie_server">
     <label for="semnate_cheie_server">Sunt semnate cu aceeasi cheie privata cu care este semnat si certificatul serverului Web</label><br>
 
-    <input type="checkbox" id="transmise_canale_sigur" name="q52" value="transmise_canale_sigur" checked disabled>
+    <input type="checkbox" id="transmise_canale_sigur" name="q52" value="transmise_canale_sigur">
     <label for="transmise_canale_sigur">Sunt transmise clientului exclusiv pe canale de incredere (sigure)</label><br>
 
     <input type="checkbox" id="folosite_ssl" name="q52" value="folosite_ssl" checked disabled>
@@ -864,20 +864,20 @@
     <legend><strong>Intrebarea:</strong></legend>
     <p>Care dintre urmatoarele reprezinta proprietati care trebuie sa fie respectate de catre o semnatura electronica?</p>
 
-    <input type="checkbox" id="neretractabil" name="q59" value="neretractabil">
-    <label for="neretractabil">Neretractabil</label><br>
-
-    <input type="checkbox" id="nefalsificabil" name="q59" value="nefalsificabil">
-    <label for="nefalsificabil">Nefalsificabil</label><br>
+    <input type="checkbox" id="nereutilizabila" name="q59" value="nereutilizabila">
+    <label for="nereutilizabila">nereutilizabila</label><br>
 
     <input type="checkbox" id="nerepudiabil" name="q59" value="nerepudiabil" checked disabled>
-    <label for="nerepudiabil">Nerepudiabil</label><br>
+    <label for="nerepudiabil">nerepudiabila</label><br>
 
-    <input type="checkbox" id="autentic" name="q59" value="autentic" checked disabled>
-    <label for="autentic">Autentic</label><br>
+    <input type="checkbox" id="nefalsificabila" name="q59" value="nefalsificabila" checked disabled>
+    <label for="nefalsificabila">nefalsificabila</label><br>
 
-    <input type="checkbox" id="nerestrictivizat" name="q59" value="nerestrictivizat">
-    <label for="nerestrictivizat">Nerestrictivizat</label>
+    <input type="checkbox" id="autentica" name="q59" value="autentica" checked disabled>
+    <label for="autentica">autentica</label><br>
+
+    <input type="checkbox" id="nealterabila" name="q59" value="nealterabila" checked disabled>
+    <label for="nealterabila">nealterabila</label>
 </fieldset>
 <br>
 <fieldset>
@@ -941,7 +941,20 @@
     <input type="checkbox" id="cheie_priv_destinatar" name="q63" value="cheie_priv_destinatar">
     <label for="cheie_priv_destinatar">Cheia privata a destinatarului mesajului</label>
 </fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Care este pericolul interceptarii de catre un tert (Man in the middle) a unei chei publice din cadrul unui certificat digital semnat de catre o autoritate de certificare si transmis pe un canal nesigur?</p>
 
+    <input type="checkbox" id="atacatorul" name="q52" value="atacatorul">
+    <label for="atacatorul">atacatorul poate inlocui cheia publica din certificat cu propria cheie publica, corespunzatoare unei chei private pe care acesta o detine</label><br>
+
+    <input type="checkbox" id="nu_exista" name="q52" value="nu_exista" checked disabled>
+    <label for="nu_exista">nu exista niciun pericol, destinatarul la care ajunge certificatul il poate valid pe baza semnaturii depuse de autoritatea de certificare</label><br>
+
+    <input type="checkbox" id="inlocui" name="q52" value="inlocui">
+    <label for="inlocui">atacatorul poate inlocui cheia privata din certificat cu propria cheie privata, corespunzatoare unei chei publice pe care ac esta o detine</label>
+</fieldset>
     </form>
 </body>
 </html>
