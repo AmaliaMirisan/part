@@ -1006,23 +1006,6 @@
 <br>
 <fieldset>
     <legend><strong>Intrebarea:</strong></legend>
-    <p>Care este pericolul compromiterii unui certificat digital emis unui site Web in scopul autentificarii acestuia de catre clienti?</p>
-
-    <input type="checkbox" id="extrage_cheie_publica" name="q21" value="extrage_cheie_publica" checked disabled>
-    <label for="extrage_cheie_publica">Se poate extrage cheia publica din acel certificat, dar acest fapt nu reprezinta un pericol</label><br>
-
-    <input type="checkbox" id="extrage_cheie_privata" name="q21" value="extrage_cheie_privata">
-    <label for="extrage_cheie_privata">Se poate extrage cheia privata din acel certificat</label><br>
-
-    <input type="checkbox" id="semna_documente" name="q21" value="semna_documente">
-    <label for="semna_documente">Se pot semna documente in numele site-ului web respectiv</label><br>
-
-    <input type="checkbox" id="nu_exista_pericol" name="q21" value="nu_exista_pericol">
-    <label for="nu_exista_pericol">Nu exista niciun pericol</label>
-</fieldset>
-<br>
-<fieldset>
-    <legend><strong>Intrebarea:</strong></legend>
     <p>Care dintre urmatoarele reprezinta scheme de validare a unui certificat digital?</p>
 
     <input type="checkbox" id="dcvp" name="q24" value="dcvp">
@@ -1198,6 +1181,306 @@
 
     <input type="checkbox" id="antivirus_semnaturi" name="q65" value="antivirus_semnaturi" disabled>
     <label for="antivirus_semnaturi">Prin infectarea fișierelor Office, cum ar fi documente Word sau Excel, nu pot fi detectați de antivirușii bazați pe semnături</label>
+</fieldset>
+<br>
+        <fieldset>
+    <legend><strong>Întrebarea:</strong></legend>
+    <p>Pentru generarea de mesaje electronice nesolicitate, SPAM-eri folosesc:</p>
+
+    <input type="checkbox" id="conturi_neprotejate" name="q66" value="conturi_neprotejate" checked disabled>
+    <label for="conturi_neprotejate">Conturi de yahoo, gmail, hotmail, etc. care nu sunt protejate</label><br>
+
+    <input type="checkbox" id="servere_fara_dkim" name="q66" value="servere_fara_dkim" checked disabled>
+    <label for="servere_fara_dkim">Servere de mail neprotejate folosind DomainKeys Identified Mail (DKIM)</label><br>
+
+    <input type="checkbox" id="open_relay" name="q66" value="open_relay" checked disabled>
+    <label for="open_relay">Servere de mail open relay</label>
+</fieldset>
+<br>
+        <fieldset>
+    <legend><strong>Întrebarea:</strong></legend>
+    <p>DomainKeys Identified Mail (DKIM) ajută la:</p>
+
+    <input type="checkbox" id="criptare_email" name="q67" value="criptare_email">
+    <label for="criptare_email">Criptarea e-mailurilor</label><br>
+
+    <input type="checkbox" id="verificare_autenticitate" name="q67" value="verificare_autenticitate" checked disabled>
+    <label for="verificare_autenticitate">Verificarea autenticității expeditorului unui e-mail</label><br>
+
+    <input type="checkbox" id="comunicare_securizata" name="q67" value="comunicare_securizata">
+    <label for="comunicare_securizata">Comunicarea securizată între serverele de mail</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Întrebarea:</strong></legend>
+    <p>Care dintre afirmațiile următoare, privind cheile implicate în protocolul PGP, sunt adevărate:</p>
+
+    <input type="checkbox" id="pgp_citire_cheie_publica" name="q68" value="pgp_citire_cheie_publica" 
+    <label for="pgp_citire_cheie_publica">Pentru a citi un mesaj este necesară cheia publică a destinatarului</label><br>
+
+    <input type="checkbox" id="pgp_citire_cheie_privata" name="q68" value="pgp_citire_cheie_privata" checked disabled>
+    <label for="pgp_citire_cheie_privata">Pentru a citi un mesaj este nevoie de cheia privată a destinatarului</label><br>
+
+    <input type="checkbox" id="pgp_trimitere_cheie_sursa" name="q68" value="pgp_trimitere_cheie_sursa">
+    <label for="pgp_trimitere_cheie_sursa">Pentru a trimite un mesaj este necesară cheia publică a sursei</label>
+</fieldset>
+
+<br>
+<fieldset>
+    <legend><strong>Întrebarea:</strong></legend>
+    <p>Care dintre următoarele afirmații despre PGP sunt adevărate:</p>
+
+    <input type="checkbox" id="pgp_ca" name="q69" value="pgp_ca">
+    <label for="pgp_ca">Folosește autorități de certificare pentru verificarea certificatelor digitale</label><br>
+
+    <input type="checkbox" id="pgp_email" name="q69" value="pgp_email" checked disabled>
+    <label for="pgp_email">Este folosit la criptarea e-mailurilor</label><br>
+
+    <input type="checkbox" id="pgp_simetric" name="q69" value="pgp_simetric">
+    <label for="pgp_simetric">Folosește algoritmi de criptare simetrici</label>
+</fieldset>
+
+<br>
+<fieldset>
+    <legend><strong>Întrebarea:</strong></legend>
+    <p>Criptarea datelor între parteneri se poate face în Internet la care dintre următoarele nivele:</p>
+
+    <input type="checkbox" id="nivel_aplicatie" name="q70" value="nivel_aplicatie" checked disabled>
+    <label for="nivel_aplicatie">Aplicație</label><br>
+
+    <input type="checkbox" id="nivel_fizic" name="q70" value="nivel_fizic">
+    <label for="nivel_fizic">Fizic și legătura de date</label><br>
+
+    <input type="checkbox" id="nivel_retea" name="q70" value="nivel_retea" checked disabled>
+    <label for="nivel_retea">Rețea</label>
+</fieldset>
+
+<br>
+<fieldset>
+    <legend><strong>Întrebarea:</strong></legend>
+    <p>Ce se înțelege prin „spargerea” funcției hash f:</p>
+
+    <input type="checkbox" id="hash_reconstituire" name="q71" value="hash_reconstituire" checked disabled>
+    <label for="hash_reconstituire">Pentru f(x) = y, cunoscându-se y, reconstituirea lui x pe baza lui y</label><br>
+
+    <input type="checkbox" id="hash_complexitate" name="q71" value="hash_complexitate">
+    <label for="hash_complexitate">Determinarea complexității algoritmului care implementează funcția f</label>
+</fieldset>
+
+<br>
+<fieldset>
+    <legend><strong>Întrebarea:</strong></legend>
+    <p>Care dintre următorii termeni reprezintă algoritmi de criptare:</p>
+
+    <input type="checkbox" id="alg_dsa" name="q72" value="alg_dsa" checked disabled>
+    <label for="alg_dsa">DSA</label><br>
+
+    <input type="checkbox" id="alg_md5" name="q72" value="alg_md5">
+    <label for="alg_md5">MD5</label><br>
+
+    <input type="checkbox" id="alg_rsa" name="q72" value="alg_rsa" checked disabled>
+    <label for="alg_rsa">RSA</label><br>
+
+    <input type="checkbox" id="alg_des" name="q72" value="alg_des" checked disabled>
+    <label for="alg_des">DES</label>
+</fieldset>
+
+<br>
+<fieldset>
+    <legend><strong>Întrebarea:</strong></legend>
+    <p>DomainKeys Identified Mail (DKIM) se bazează pe următorul/următoarele protocoale de la nivel aplicație:</p>
+
+    <input type="checkbox" id="dkim_smtp" name="q73" value="dkim_smtp">
+    <label for="dkim_smtp">SMTP</label><br>
+
+    <input type="checkbox" id="dkim_ssh" name="q73" value="dkim_ssh">
+    <label for="dkim_ssh">SSH</label><br>
+
+    <input type="checkbox" id="dkim_dns" name="q73" value="dkim_dns" checked disabled>
+    <label for="dkim_dns">DNS</label>
+</fieldset>
+
+<br>
+<fieldset>
+    <legend><strong>Întrebarea:</strong></legend>
+    <p>Care dintre următoarele afirmații reprezintă un mecanism/mecanisme de schimb al cheii secrete între doi parteneri:</p>
+
+    <input type="checkbox" id="schimb_simetric" name="q74" value="schimb_simetric" checked disabled>
+    <label for="schimb_simetric">Pe același canal, dacă în prealabil partenerii negociază prin intermediul unui protocol bazat pe un algoritm de criptare simetric</label><br>
+
+    <input type="checkbox" id="schimb_asimetric" name="q74" value="schimb_asimetric" checked disabled>
+    <label for="schimb_asimetric">Pe același canal, dacă în prealabil partenerii negociază prin intermediul unui protocol bazat pe un algoritm de criptare asimetric</label><br>
+
+    <input type="checkbox" id="schimb_canal_sigur" name="q74" value="schimb_canal_sigur" checked disabled>
+    <label for="schimb_canal_sigur">Pe un singur canal sigur, diferit de cel pe care are loc comunicarea</label>
+</fieldset>
+
+<br>
+<fieldset>
+    <legend><strong>Întrebarea:</strong></legend>
+    <p>Un hash poate fi decriptat cu atât mai ușor cu cât:</p>
+
+    <input type="checkbox" id="hash_cheie_mica" name="q75" value="hash_cheie_mica">
+    <label for="hash_cheie_mica">Lungimea cheii folosite de funcția de hash este mai mică</label><br>
+
+    <input type="checkbox" id="hash_calculator_rapid" name="q75" value="hash_calculator_rapid">
+    <label for="hash_calculator_rapid">Calculatorul pe care se fac calculele este mai rapid</label><br>
+
+    <input type="checkbox" id="hash_nu_se_decripteaza" name="q75" value="hash_nu_se_decripteaza" checked disabled>
+    <label for="hash_nu_se_decripteaza">Un hash nu poate fi decriptat</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Întrebarea:</strong></legend>
+    <p>Un certificat digital conține:</p>
+
+    <input type="checkbox" id="cert_cheie_pub_utilizator" name="q76" value="cert_cheie_pub_utilizator" checked disabled>
+    <label for="cert_cheie_pub_utilizator">Cheia publică a persoanei căreia i se eliberează certificatul</label><br>
+
+    <input type="checkbox" id="cert_cheie_pub_ca" name="q76" value="cert_cheie_pub_ca">
+    <label for="cert_cheie_pub_ca">Cheia publică a autorității de certificare care emite certificatul</label><br>
+
+    <input type="checkbox" id="cert_cheie_priv_utilizator" name="q76" value="cert_cheie_priv_utilizator">
+    <label for="cert_cheie_priv_utilizator">Cheia privată a persoanei căreia i se eliberează certificatul</label><br>
+
+    <input type="checkbox" id="cert_cheie_priv_ca" name="q76" value="cert_cheie_priv_ca">
+    <label for="cert_cheie_priv_ca">Cheia privată a autorității de certificare care emite certificatul</label>
+</fieldset>
+        <br>
+<fieldset>
+    <legend><strong>Întrebarea:</strong></legend>
+    <p>Orice algoritm de criptare poate fi spart prin:</p>
+
+    <input type="checkbox" id="vulnerabilitate_hashing" name="q77" value="vulnerabilitate_hashing">
+    <label for="vulnerabilitate_hashing">Vulnerabilități în funcția de hashing a cheii</label><br>
+
+    <input type="checkbox" id="reverse_engineering" name="q77" value="reverse_engineering">
+    <label for="reverse_engineering">Reverse engineering (dezasamblarea) unui program ce implementează algoritmul de criptare</label><br>
+
+    <input type="checkbox" id="calculatoare_cuantice" name="q77" value="calculatoare_cuantice">
+    <label for="calculatoare_cuantice">Folosind calculatoare cuantice (pe minim 4096 qubiți)</label><br>
+
+    <input type="checkbox" id="derivare_hash_elliptic" name="q77" value="derivare_hash_elliptic">
+    <label for="derivare_hash_elliptic">Derivarea funcției de hash folosită de algoritmii pe curbe eliptice</label><br>
+
+    <input type="checkbox" id="brute_force" name="q77" value="brute_force" checked disabled>
+    <label for="brute_force">Criptanaliză brute force</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Întrebarea:</strong></legend>
+    <p>Pentru semnarea unui document de către o entitate este nevoie de:</p>
+
+    <input type="checkbox" id="semnare_cheie_publica" name="q78" value="semnare_cheie_publica">
+    <label for="semnare_cheie_publica">Cheia publică a entității ce semnează</label><br>
+
+    <input type="checkbox" id="semnare_hash" name="q78" value="semnare_hash" checked disabled>
+    <label for="semnare_hash">Hash-ul documentului</label><br>
+
+    <input type="checkbox" id="semnare_document" name="q78" value="semnare_document" >
+    <label for="semnare_document">Documentul în sine</label><br>
+
+    <input type="checkbox" id="semnare_cheie_privata" name="q78" value="semnare_cheie_privata" checked disabled>
+    <label for="semnare_cheie_privata">Cheia privată a entității ce semnează</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Întrebarea:</strong></legend>
+    <p>Pe un canal de comunicare securizat (spre exemplu SSH), ce trebuie să cunoască serverul pentru a putea autentifica cu succes un client:</p>
+
+    <input type="checkbox" id="autentificare_parola" name="q79" value="autentificare_parola">
+    <label for="autentificare_parola">Doar clientul poate autentifica serverul folosind mecanisme bazate pe chei sau certificate, serverul autentifică clientul exclusiv pe baza unui nume de utilizator și a unei parole</label><br>
+
+    <input type="checkbox" id="autentificare_cheie_publica" name="q79" value="autentificare_cheie_publica" checked disabled>
+    <label for="autentificare_cheie_publica">Cheia publică a clientului</label><br>
+
+    <input type="checkbox" id="autentificare_cheie_privata" name="q79" value="autentificare_cheie_privata">
+    <label for="autentificare_cheie_privata">Cheia privată a clientului</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Întrebarea:</strong></legend>
+    <p>Într-o infrastructură de tip PKI, care dintre următoarele pot fi menținute pe un calculator neconectat la rețea:</p>
+
+    <input type="checkbox" id="pki_chei_private_parteneri" name="q81" value="pki_chei_private_parteneri">
+    <label for="pki_chei_private_parteneri">Cheile private ale partenerilor ce comunică</label><br>
+
+    <input type="checkbox" id="pki_certificat_ca" name="q81" value="pki_certificat_ca">
+    <label for="pki_certificat_ca">Certificatul digital al autorității de certificare</label><br>
+
+    <input type="checkbox" id="pki_cheie_privata_ca" name="q81" value="pki_cheie_privata_ca">
+    <label for="pki_cheie_privata_ca">Cheia privată a autorității de certificare</label><br>
+
+    <input type="checkbox" id="pki_cert_parteneri" name="q81" value="pki_cert_parteneri" checked disabled>
+    <label for="pki_cert_parteneri">Certificatele digitale ale partenerilor ce comunică, certificate emise de autoritatea de certificare</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Întrebarea:</strong></legend>
+    <p>Care dintre următorii termeni reprezintă algoritmi de criptare:</p>
+
+    <p><em>Simetrici pe cheie privată</em></p>
+    <input type="checkbox" id="alg_des" name="q82" value="alg_des" checked disabled>
+    <label for="alg_des">DES (Data Encryption Standard)</label><br>
+
+    <input type="checkbox" id="alg_tdes" name="q82" value="alg_tdes" checked disabled>
+    <label for="alg_tdes">TDES (Triple DES)</label><br>
+
+    <input type="checkbox" id="alg_aes" name="q82" value="alg_aes" checked disabled>
+    <label for="alg_aes">AES (Advanced Encryption Standard)</label><br>
+
+    <p><em>Asimetrici pe cheie publică</em></p>
+    <input type="checkbox" id="alg_pkc" name="q82" value="alg_pkc">
+    <label for="alg_pkc">PKC (Public Key Cryptography)</label><br>
+
+    <input type="checkbox" id="alg_rsa" name="q82" value="alg_rsa" checked disabled>
+    <label for="alg_rsa">RSA (Rivest-Shamir-Adleman)</label><br>
+
+    <input type="checkbox" id="alg_elgamal" name="q82" value="alg_elgamal" checked disabled>
+    <label for="alg_elgamal">ElGamal</label>
+</fieldset>
+
+<br>
+<fieldset>
+    <legend><strong>Întrebarea:</strong></legend>
+    <p>Care este pericolul interceptării de către un terț (Man in the Middle) a unei chei publice din cadrul unui certificat digital semnat de către o autoritate de certificare și transmis pe un canal nesigur?</p>
+
+    <input type="checkbox" id="mitm_inlocuire_cheie_publica" name="q83" value="mitm_inlocuire_cheie_publica" checked disabled>
+    <label for="mitm_inlocuire_cheie_publica">Atacatorul poate înlocui cheia publică din certificat cu propria cheie publică, corespunzătoare unei chei private pe care acesta o deține</label><br>
+
+    <input type="checkbox" id="mitm_inlocuire_cheie_privata" name="q83" value="mitm_inlocuire_cheie_privata">
+    <label for="mitm_inlocuire_cheie_privata">Atacatorul poate înlocui cheia privată din certificat cu propria cheie privată, corespunzătoare unei chei publice pe care acesta o deține</label><br>
+
+    <input type="checkbox" id="mitm_niciun_pericol" name="q83" value="mitm_niciun_pericol">
+    <label for="mitm_niciun_pericol">Nu există niciun pericol, destinatarul la care ajunge certificatul îl poate valida pe baza semnăturii depuse de autoritatea de certificare</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Întrebarea:</strong></legend>
+    <p>O semnătură digitală are următoarele proprietăți:</p>
+
+    <input type="checkbox" id="semnatura_nepenetrabila" name="q84" value="semnatura_nepenetrabila">
+    <label for="semnatura_nepenetrabila">Nepenetrabilă</label><br>
+
+    <input type="checkbox" id="semnatura_nealterabila" name="q84" value="semnatura_nealterabila" checked disabled>
+    <label for="semnatura_nealterabila">Nealterabilă</label><br>
+
+    <input type="checkbox" id="semnatura_nefalsificabila" name="q84" value="semnatura_nefalsificabila" checked disabled>
+    <label for="semnatura_nefalsificabila">Nefalsificabilă</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Întrebarea:</strong></legend>
+    <p>Un certificat eliberat pentru serverul web cs.ubbcluj.ro poate fi folosit și pentru serverul de mail cs.ubbcluj.ro?</p>
+
+    <input type="checkbox" id="certificat_fara_port" name="q85" value="certificat_fara_port">
+    <label for="certificat_fara_port">Doar în situația în care în certificat nu este trecut portul serviciului pentru care este eliberat</label><br>
+
+    <input type="checkbox" id="certificat_nume_egal" name="q85" value="certificat_nume_egal">
+    <label for="certificat_nume_egal">Da, nu este nicio problemă numele serverului fiind același</label><br>
+
+    <input type="checkbox" id="certificat_diferit" name="q85" value="certificat_diferit" checked disabled>
+    <label for="certificat_diferit">Nu, serverul de mail are nevoie de un certificat diferit</label>
 </fieldset>
 
 
