@@ -215,7 +215,7 @@
     <input type="checkbox" id="generare_pereche" name="q13" value="generare_pereche" checked disabled>
     <label for="generare_pereche">Generarea perechii (cheie publica, cheie privata) implicate in procesul de semnare si verificare a certificatelor digitale emise</label><br>
 
-    <input type="checkbox" id="certificat_semnat_ca" name="q13" value="certificat_semnat_ca" checked disabled>
+    <input type="checkbox" id="certificat_semnat_ca" name="q13" value="certificat_semnat_ca">
     <label for="certificat_semnat_ca">Obtinearea unui certificat digital semnat de catre o autoritate de certificare recunoscuta</label><br>
 
     <input type="checkbox" id="pereche_chei_de_la_ca" name="q13" value="pereche_chei_de_la_ca">
@@ -388,7 +388,7 @@
     <legend><strong>Intrebarea:</strong></legend>
     <p>Care dintre urmatoarele afirmatii sunt adevarate despre virusi si viermi:</p>
 
-    <input type="checkbox" id="vierme_internet" name="q25" value="vierme_internet" checked disabled>
+    <input type="checkbox" id="vierme_internet" name="q25" value="vierme_internet">
     <label for="vierme_internet">Un vierme este un virus care se raspandeste folosind reteaua Internet</label><br>
 
     <input type="checkbox" id="virusi_offline" name="q25" value="virusi_offline">
@@ -652,13 +652,13 @@
     <legend><strong>Intrebarea:</strong></legend>
     <p>Data Execution Prevention se refera la:</p>
 
-    <input type="checkbox" id="masura_randomizare_stiva" name="q46" value="masura_randomizare_stiva">
+    <input type="checkbox" id="masura_randomizare_stiva" name="q46" value="masura_randomizare_stiva" checked disabled>
     <label for="masura_randomizare_stiva">O masura complementara mecanismului de randomizare a stivei pentru a preveni anumite tipuri de atacuri</label><br>
 
     <input type="checkbox" id="prevenire_cod_executabil" name="q46" value="prevenire_cod_executabil" checked disabled>
     <label for="prevenire_cod_executabil">Un mecanism pentru a preveni atacurile ce presupun injectarea de cod executabil pe stiva</label><br>
 
-    <input type="checkbox" id="prevenire_executie_zone_date" name="q46" value="prevenire_executie_zone_date" checked disabled>
+    <input type="checkbox" id="prevenire_executie_zone_date" name="q46" value="prevenire_executie_zone_date">
     <label for="prevenire_executie_zone_date">Un mecanism de prevenire a executiei zonelor de memorie ce nu contin instructiuni valide (contin date, variabile, constante)</label>
 </fieldset>
 <br>
@@ -734,27 +734,14 @@
     <input type="checkbox" id="cloneaza_site" name="q51" value="cloneaza_site" checked disabled>
     <label for="cloneaza_site">Cloneze perfect site-ul targetat (spre exemplu site-ul unei institutii bancare)</label><br>
 
-    <input type="checkbox" id="adauga_root_ca" name="q51" value="adauga_root_ca">
+    <input type="checkbox" id="adauga_root_ca" name="q51" value="adauga_root_ca" checked disabled>
     <label for="adauga_root_ca">Sa isi adauge propria autoritate de certificare (ROOT CA) pe calculatoarele victimelor</label><br>
 
-    <input type="checkbox" id="forteaza_http" name="q51" value="forteaza_http" checked disabled>
+    <input type="checkbox" id="forteaza_http" name="q51" value="forteaza_http" >
     <label for="forteaza_http">Sa forteze ca victimele sa acceseze site-ul clonat prin HTTP, nu HTTPS pentru a putea intercepta traficul</label>
 </fieldset>
 <br>
-<fieldset>
-    <legend><strong>Intrebarea:</strong></legend>
-    <p>Care dintre urmatoarele afirmatii sunt adevarate in ceea ce priveste certificatele digitale Web client-side?</p>
 
-    <input type="checkbox" id="semnate_cheie_server" name="q52" value="semnate_cheie_server">
-    <label for="semnate_cheie_server">Sunt semnate cu aceeasi cheie privata cu care este semnat si certificatul serverului Web</label><br>
-
-    <input type="checkbox" id="transmise_canale_sigur" name="q52" value="transmise_canale_sigur">
-    <label for="transmise_canale_sigur">Sunt transmise clientului exclusiv pe canale de incredere (sigure)</label><br>
-
-    <input type="checkbox" id="folosite_ssl" name="q52" value="folosite_ssl" checked disabled>
-    <label for="folosite_ssl">Folosite impreuna cu protocolul SSL si cu autentificarea pe baza de user si parola sporesc securitatea autentificarii si identificarii clientului</label>
-</fieldset>
-<br>
 <fieldset>
     <legend><strong>Intrebarea:</strong></legend>
     <p>O retea virtuala privata (VPN) se bazeaza pe:</p>
@@ -773,16 +760,16 @@
     <legend><strong>Intrebarea:</strong></legend>
     <p>Care dintre urmatoarele afirmatii sunt adevarate in ceea ce priveste o semnatura digitala?</p>
 
-    <input type="checkbox" id="document_datat" name="q54" value="document_datat" checked disabled>
+    <input type="checkbox" id="document_datat" name="q54" value="document_datat">
     <label for="document_datat">Orice document semnat digital poate fi datat in timp</label><br>
 
-    <input type="checkbox" id="semnatura_hash" name="q54" value="semnatura_hash">
+    <input type="checkbox" id="semnatura_hash" name="q54" value="semnatura_hash" checked disabled>
     <label for="semnatura_hash">Semnatura digitala este de fapt un hash</label><br>
 
     <input type="checkbox" id="semnatura_cheie_privata" name="q54" value="semnatura_cheie_privata" checked disabled>
     <label for="semnatura_cheie_privata">Semnatura digitala este creata cu ajutorul unei chei private</label><br>
 
-    <input type="checkbox" id="parte_validare" name="q54" value="parte_validare" checked disabled>
+    <input type="checkbox" id="parte_validare" name="q54" value="parte_validare" >
     <label for="parte_validare">Pentru a aplica o semnatura digitala mai este nevoie de cel putin inca o parte implicata care sa ateste ca semnatura e valida si sa emita un certificat digital emis</label>
 </fieldset>
 <br>
@@ -790,10 +777,10 @@
     <legend><strong>Intrebarea:</strong></legend>
     <p>Certificatele digitale autosemnate se folosesc:</p>
 
-    <input type="checkbox" id="de_catre_CA" name="q55" value="de_catre_CA">
+    <input type="checkbox" id="de_catre_CA" name="q55" value="de_catre_CA" checked disabled>
     <label for="de_catre_CA">De catre autoritatile de certificare</label><br>
 
-    <input type="checkbox" id="emis_utilizator" name="q55" value="emis_utilizator" checked disabled>
+    <input type="checkbox" id="emis_utilizator" name="q55" value="emis_utilizator" >
     <label for="emis_utilizator">Doar daca apartin/sunt emise de catre un utilizator pentru el insusi si sunt semnate de catre acelasi utilizator</label><br>
 
     <input type="checkbox" id="nu_autosemnat" name="q55" value="nu_autosemnat">
@@ -818,13 +805,13 @@
     <legend><strong>Intrebarea:</strong></legend>
     <p>Care este pericolul compromiterii unui certificat digital emis unui site Web in scopul autentificarii acestuia de catre clienti?</p>
 
-    <input type="checkbox" id="semnare_in_nume" name="q57" value="semnare_in_nume" checked disabled>
+    <input type="checkbox" id="semnare_in_nume" name="q57" value="semnare_in_nume" >
     <label for="semnare_in_nume">Sa poti semna documente in numele site-ului web respectiv</label><br>
 
-    <input type="checkbox" id="niciun_pericol" name="q57" value="niciun_pericol">
+    <input type="checkbox" id="niciun_pericol" name="q57" value="niciun_pericol" checked disabled>
     <label for="niciun_pericol">Nu exista niciun pericol</label><br>
 
-    <input type="checkbox" id="extrage_cheie_publica" name="q57" value="extrage_cheie_publica">
+    <input type="checkbox" id="extrage_cheie_publica" name="q57" value="extrage_cheie_publica" checked disabled>
     <label for="extrage_cheie_publica">Se poate extrage cheia publica din acel certificat dar acest fapt nu reprezinta un pericol</label><br>
 
     <input type="checkbox" id="extrage_cheie_privata" name="q57" value="extrage_cheie_privata">
@@ -864,7 +851,7 @@
     <legend><strong>Intrebarea:</strong></legend>
     <p>Care dintre urmatoarele reprezinta proprietati care trebuie sa fie respectate de catre o semnatura electronica?</p>
 
-    <input type="checkbox" id="nereutilizabila" name="q59" value="nereutilizabila">
+    <input type="checkbox" id="nereutilizabila" name="q59" value="nereutilizabila" checked disabled>
     <label for="nereutilizabila">nereutilizabila</label><br>
 
     <input type="checkbox" id="nerepudiabil" name="q59" value="nerepudiabil" checked disabled>
@@ -887,7 +874,7 @@
     <input type="checkbox" id="aplicatie" name="q60" value="aplicatie" checked disabled>
     <label for="aplicatie">Aplicatie</label><br>
 
-    <input type="checkbox" id="fizic" name="q60" value="fizic">
+    <input type="checkbox" id="fizic" name="q60" value="fizic" checked disabled>
     <label for="fizic">Fizic si legatura de date</label><br>
 
     <input type="checkbox" id="retea" name="q60" value="retea" checked disabled>
@@ -960,31 +947,17 @@
     <legend><strong>Intrebarea:</strong></legend>
     <p>Care dintre urmatoarele afirmatii despre procesul de schimb de chei sunt adevarate in contextul folosirii algoritmilor de criptare simetrici, respectiv asimetrici:</p>
 
-    <input type="checkbox" id="schimb_chei_aceeasi_canal" name="q64" value="schimb_chei_aceeasi_canal" checked disabled>
+    <input type="checkbox" id="schimb_chei_aceeasi_canal" name="q64" value="schimb_chei_aceeasi_canal">
     <label for="schimb_chei_aceeasi_canal">In ambele situatii, schimbul de chei se poate realiza pe acelasi canal / prin acelasi mecanism prin care are loc si comunicarea</label><br>
 
     <input type="checkbox" id="schimb_chei_asimetric" name="q64" value="schimb_chei_asimetric">
     <label for="schimb_chei_asimetric">Schimbul de chei pe un alt canal / mecanism diferit de comunicare alternativ trebuie sa se realizeze doar in cazul algoritmilor de criptare asimetrici</label><br>
 
-    <input type="checkbox" id="schimb_chei_simetric" name="q64" value="schimb_chei_simetric" checked disabled>
+    <input type="checkbox" id="schimb_chei_simetric" name="q64" value="schimb_chei_simetric" >
     <label for="schimb_chei_simetric">Schimbul de chei pe un alt canal / mecanism diferit de comunicare alternativ trebuie sa se realizeze doar in cazul algoritmilor de criptare simetrici</label><br>
 
-    <input type="checkbox" id="schimb_chei_alt_canal" name="q64" value="schimb_chei_alt_canal">
+    <input type="checkbox" id="schimb_chei_alt_canal" name="q64" value="schimb_chei_alt_canal" checked disabled>
     <label for="schimb_chei_alt_canal">In ambele situatii, schimbul de chei trebuie sa se desfasoare pe un alt canal / printr-un mecanism de comunicare alternativ</label>
-</fieldset>
-<br>
-<fieldset>
-    <legend><strong>Intrebarea:</strong></legend>
-    <p>Care este pericolul interceptarii de catre un tert (Man in the Middle) a unei chei publice din cadrul unui certificat digital semnat de catre o autoritate de certificare si transmis pe un canal nesigur?</p>
-
-    <input type="checkbox" id="inlocuire_cheie_publica" name="q67" value="inlocuire_cheie_publica">
-    <label for="inlocuire_cheie_publica">Atacatorul poate inlocui cheia publica din certificat cu propria cheie publica, corespunzatoare unei chei private pe care acesta o detine</label><br>
-
-    <input type="checkbox" id="nu_exista_pericol" name="q67" value="nu_exista_pericol" checked disabled>
-    <label for="nu_exista_pericol">Nu exista niciun pericol, destinatarul la care ajunge certificatul il poate valida pe baza semnaturii depuse de autoritatea de certificare</label><br>
-
-    <input type="checkbox" id="inlocuire_cheie_privata" name="q67" value="inlocuire_cheie_privata">
-    <label for="inlocuire_cheie_privata">Atacatorul poate inlocui cheia privata din certificat cu propria cheie privata, corespunzatoare unei chei publice pe care acesta o detine</label>
 </fieldset>
 <br>
 <fieldset>
@@ -1243,21 +1216,6 @@
 <br>
 <fieldset>
     <legend><strong>Întrebarea:</strong></legend>
-    <p>Criptarea datelor între parteneri se poate face în Internet la care dintre următoarele nivele:</p>
-
-    <input type="checkbox" id="nivel_aplicatie" name="q70" value="nivel_aplicatie" checked disabled>
-    <label for="nivel_aplicatie">Aplicație</label><br>
-
-    <input type="checkbox" id="nivel_fizic" name="q70" value="nivel_fizic">
-    <label for="nivel_fizic">Fizic și legătura de date</label><br>
-
-    <input type="checkbox" id="nivel_retea" name="q70" value="nivel_retea" checked disabled>
-    <label for="nivel_retea">Rețea</label>
-</fieldset>
-
-<br>
-<fieldset>
-    <legend><strong>Întrebarea:</strong></legend>
     <p>Ce se înțelege prin „spargerea” funcției hash f:</p>
 
     <input type="checkbox" id="hash_reconstituire" name="q71" value="hash_reconstituire" checked disabled>
@@ -1408,10 +1366,10 @@
     <input type="checkbox" id="pki_certificat_ca" name="q81" value="pki_certificat_ca">
     <label for="pki_certificat_ca">Certificatul digital al autorității de certificare</label><br>
 
-    <input type="checkbox" id="pki_cheie_privata_ca" name="q81" value="pki_cheie_privata_ca">
+    <input type="checkbox" id="pki_cheie_privata_ca" name="q81" value="pki_cheie_privata_ca" checked disabled>
     <label for="pki_cheie_privata_ca">Cheia privată a autorității de certificare</label><br>
 
-    <input type="checkbox" id="pki_cert_parteneri" name="q81" value="pki_cert_parteneri" checked disabled>
+    <input type="checkbox" id="pki_cert_parteneri" name="q81" value="pki_cert_parteneri" >
     <label for="pki_cert_parteneri">Certificatele digitale ale partenerilor ce comunică, certificate emise de autoritatea de certificare</label>
 </fieldset>
 <br>
@@ -1439,21 +1397,6 @@
     <input type="checkbox" id="alg_elgamal" name="q82" value="alg_elgamal" checked disabled>
     <label for="alg_elgamal">ElGamal</label>
 </fieldset>
-
-<br>
-<fieldset>
-    <legend><strong>Întrebarea:</strong></legend>
-    <p>Care este pericolul interceptării de către un terț (Man in the Middle) a unei chei publice din cadrul unui certificat digital semnat de către o autoritate de certificare și transmis pe un canal nesigur?</p>
-
-    <input type="checkbox" id="mitm_inlocuire_cheie_publica" name="q83" value="mitm_inlocuire_cheie_publica" checked disabled>
-    <label for="mitm_inlocuire_cheie_publica">Atacatorul poate înlocui cheia publică din certificat cu propria cheie publică, corespunzătoare unei chei private pe care acesta o deține</label><br>
-
-    <input type="checkbox" id="mitm_inlocuire_cheie_privata" name="q83" value="mitm_inlocuire_cheie_privata">
-    <label for="mitm_inlocuire_cheie_privata">Atacatorul poate înlocui cheia privată din certificat cu propria cheie privată, corespunzătoare unei chei publice pe care acesta o deține</label><br>
-
-    <input type="checkbox" id="mitm_niciun_pericol" name="q83" value="mitm_niciun_pericol">
-    <label for="mitm_niciun_pericol">Nu există niciun pericol, destinatarul la care ajunge certificatul îl poate valida pe baza semnăturii depuse de autoritatea de certificare</label>
-</fieldset>
 <br>
 <fieldset>
     <legend><strong>Întrebarea:</strong></legend>
@@ -1476,13 +1419,437 @@
     <input type="checkbox" id="certificat_fara_port" name="q85" value="certificat_fara_port">
     <label for="certificat_fara_port">Doar în situația în care în certificat nu este trecut portul serviciului pentru care este eliberat</label><br>
 
-    <input type="checkbox" id="certificat_nume_egal" name="q85" value="certificat_nume_egal">
+    <input type="checkbox" id="certificat_nume_egal" name="q85" value="certificat_nume_egal" checked disabled>
     <label for="certificat_nume_egal">Da, nu este nicio problemă numele serverului fiind același</label><br>
 
-    <input type="checkbox" id="certificat_diferit" name="q85" value="certificat_diferit" checked disabled>
+    <input type="checkbox" id="certificat_diferit" name="q85" value="certificat_diferit" >
     <label for="certificat_diferit">Nu, serverul de mail are nevoie de un certificat diferit</label>
 </fieldset>
+<br>
+<fieldset>
+    <legend><strong>Întrebarea:</strong></legend>
+    <p>Which of the following methods of virus propagation can bypass detection by antivirus software?</p>
 
+    <input type="checkbox" id="encrypted_viruses" name="q1" value="encrypted_viruses" checked disabled>
+    <label for="encrypted_viruses">Encrypted viruses</label><br>
+
+    <input type="checkbox" id="file_viruses" name="q1" value="file_viruses">
+    <label for="file_viruses">File viruses</label><br>
+
+    <input type="checkbox" id="polymorphic_viruses" name="q1" value="polymorphic_viruses" checked disabled>
+    <label for="polymorphic_viruses">Polymorphic viruses</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Which of the following is the most secure method to protect sensitive data at rest in a cloud storage environment?</p>
+
+    <input type="checkbox" id="mfa_cloud_storage" name="q2" value="mfa_cloud_storage">
+    <label for="mfa_cloud_storage">Utilizing multi-factor authentication (MFA) for all users accessing cloud storage.</label><br>
+
+    <input type="checkbox" id="plaintext_access_control" name="q2" value="plaintext_access_control">
+    <label for="plaintext_access_control">Storing data in plaintext and relying on access control policies to prevent unauthorized access.</label><br>
+
+    <input type="checkbox" id="strong_encryption_before_upload" name="q2" value="strong_encryption_before_upload" checked disabled>
+    <label for="strong_encryption_before_upload">Encrypting data with a strong encryption algorithm before uploading it to the cloud.</label><br>
+
+    <input type="checkbox" id="provider_default_encryption" name="q2" value="provider_default_encryption">
+    <label for="provider_default_encryption">Using cloud provider's default encryption settings, assuming they meet industry standards.</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>How can a virus hide to be harder to detect by an antivirus?</p>
+
+    <input type="checkbox" id="hidden_files" name="q3" value="hidden_files">
+    <label for="hidden_files">It only infects hidden files</label><br>
+
+    <input type="checkbox" id="mutates" name="q3" value="mutates" checked disabled>
+    <label for="mutates">It mutates</label><br>
+
+    <input type="checkbox" id="not_resident_memory" name="q3" value="not_resident_memory">
+    <label for="not_resident_memory">It does not remain resident in memory</label><br>
+
+    <input type="checkbox" id="redirects_calls" name="q3" value="redirects_calls" checked disabled>
+    <label for="redirects_calls">It redirects system calls</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Shell code refers to:</p>
+
+    <input type="checkbox" id="exploit_code" name="q4" value="exploit_code" checked disabled>
+    <label for="exploit_code">Code designed to exploit a vulnerability in a system, used to execute malicious instructions</label><br>
+
+    <input type="checkbox" id="display_shell_commands" name="q4" value="display_shell_commands">
+    <label for="display_shell_commands">Code used to display shell commands on the terminal</label><br>
+
+    <input type="checkbox" id="initiate_shell" name="q4" value="initiate_shell" checked disabled>
+    <label for="initiate_shell">Code designed to initiate a shell with the attacker's control on the system</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Which of the following is the most effective method for protecting against supply chain attacks in the context of software development?</p>
+
+    <input type="checkbox" id="patching_third_party" name="q5" value="patching_third_party">
+    <label for="patching_third_party">Regular patching and updates to all third-party software libraries</label><br>
+
+    <input type="checkbox" id="mfa_development" name="q5" value="mfa_development">
+    <label for="mfa_development">Implementing multifactor authentication (MFA) for all users accessing the development environment</label><br>
+
+    <input type="checkbox" id="code_signing" name="q5" value="code_signing" checked disabled>
+    <label for="code_signing">Implementing code signing and cryptographic hash verification on all software components</label><br>
+
+    <input type="checkbox" id="nids_internal" name="q5" value="nids_internal">
+    <label for="nids_internal">Deploying network intrusion detection systems (NIDS) across all internal systems</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Which of the following are common characteristics of a cyber virus?</p>
+
+    <input type="checkbox" id="no_host_file" name="q6" value="no_host_file">
+    <label for="no_host_file">It spreads from one system to another without requiring a host file</label><br>
+
+    <input type="checkbox" id="requires_user_action" name="q6" value="requires_user_action" checked disabled>
+    <label for="requires_user_action">It can reproduce itself but requires user action to spread</label><br>
+
+    <input type="checkbox" id="self_destructs" name="q6" value="self_destructs">
+    <label for="self_destructs">It remains active for a limited time, after which it self-destructs</label><br>
+
+    <input type="checkbox" id="installs_from_website" name="q6" value="installs_from_website">
+    <label for="installs_from_website">It installs automatically on a device by accessing a compromised website</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Phishing attacks are generally accompanied by the following type of attacks:</p>
+
+    <input type="checkbox" id="denial_of_service" name="q7" value="denial_of_service">
+    <label for="denial_of_service">Denial of service</label><br>
+
+    <input type="checkbox" id="web_server_compromise" name="q7" value="web_server_compromise" checked disabled>
+    <label for="web_server_compromise">Attacks involving the compromise of a web server’s security</label><br>
+
+    <input type="checkbox" id="social_engineering" name="q7" value="social_engineering" checked disabled>
+    <label for="social_engineering">Social Engineering attacks</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Which of the following is a type of malware that spreads through networks and does not require a host file to spread?</p>
+
+    <input type="checkbox" id="virus" name="q8" value="virus">
+    <label for="virus">Virus</label><br>
+
+    <input type="checkbox" id="worm" name="q8" value="worm" checked disabled>
+    <label for="worm">Worm</label><br>
+
+    <input type="checkbox" id="rootkit" name="q8" value="rootkit">
+    <label for="rootkit">Rootkit</label><br>
+
+    <input type="checkbox" id="trojan" name="q8" value="trojan">
+    <label for="trojan">Trojan</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>In the context of security in a SaaS (Software as a Service) environment, which of the following measures is essential for protecting user accounts?</p>
+
+    <input type="checkbox" id="mfa_users" name="q9" value="mfa_users" checked disabled>
+    <label for="mfa_users">Implementing multi-factor authentication (MFA) for users</label><br>
+
+    <input type="checkbox" id="network_topology_analysis" name="q9" value="network_topology_analysis">
+    <label for="network_topology_analysis">Conducting a complete analysis of network topology</label><br>
+
+    <input type="checkbox" id="strict_access_control" name="q9" value="strict_access_control">
+    <label for="strict_access_control">Ensuring strict access control to internal applications</label><br>
+
+    <input type="checkbox" id="os_integrity" name="q9" value="os_integrity">
+    <label for="os_integrity">Protecting the integrity of the operating systems used</label>
+</fieldset>
+
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Arrange in ascending chronological order the following forms of malware: dialer, ransomware, scareware</p>
+
+    <input type="checkbox" id="order_1" name="q10" value="order_1" checked disabled>
+    <label for="order_1">dialer, scareware, ransomware</label><br>
+
+    <input type="checkbox" id="order_2" name="q10" value="order_2">
+    <label for="order_2">ransomware, dialer, scareware</label><br>
+
+    <input type="checkbox" id="order_3" name="q10" value="order_3">
+    <label for="order_3">dialer, ransomware, scareware</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Which of the following statements best describes External Penetration Testing?</p>
+
+    <input type="checkbox" id="no_network_knowledge" name="q11" value="no_network_knowledge">
+    <label for="no_network_knowledge">It is done without knowledge of the organization's network</label><br>
+
+    <input type="checkbox" id="internal_devices_testing" name="q11" value="internal_devices_testing">
+    <label for="internal_devices_testing">It involves testing the internal devices of the organization</label><br>
+
+    <input type="checkbox" id="public_info_analysis" name="q11" value="public_info_analysis"  checked disabled>
+    <label for="public_info_analysis">It focuses on analyzing publicly available information and evaluating the behavior of devices exposed on the Internet</label><br>
+
+    <input type="checkbox" id="internal_simulation" name="q11" value="internal_simulation">
+    <label for="internal_simulation">It includes testing internal company systems as well as simulating attacks from within</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Which of the following penetration testing techniques involves capturing and analyzing network traffic to obtain sensitive information?</p>
+
+    <input type="checkbox" id="brute_force" name="q12" value="brute_force">
+    <label for="brute_force">Brute-Force Attacks</label><br>
+
+    <input type="checkbox" id="vulnerability_scanning" name="q12" value="vulnerability_scanning">
+    <label for="vulnerability_scanning">Vulnerability Scanning</label><br>
+
+    <input type="checkbox" id="spoofing" name="q12" value="spoofing">
+    <label for="spoofing">Spoofing</label><br>
+
+    <input type="checkbox" id="network_sniffing" name="q12" value="network_sniffing" checked disabled>
+    <label for="network_sniffing">Network Sniffing</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Virusii pot suferi mutatii datorita:</p>
+
+    <input type="checkbox" id="caracter_polimorf" name="q13" value="caracter_polimorf" checked disabled>
+    <label for="caracter_polimorf">Caracterului polimorf al acestora</label><br>
+
+    <input type="checkbox" id="rescriere_terti" name="q13" value="rescriere_terti" checked disabled>
+    <label for="rescriere_terti">Rescrierii unor noi variante de catre terti</label><br>
+
+    <input type="checkbox" id="caracter_metamorf" name="q13" value="caracter_metamorf" checked disabled>
+    <label for="caracter_metamorf">Caracterului metamorf al acestora</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Care dintre urmatoarele sunt caracteristici comune ale unui virus cibernetic?</p>
+
+    <input type="checkbox" id="fara_fisier_gazda" name="q14" value="fara_fisier_gazda">
+    <label for="fara_fisier_gazda">Se raspandeste de la un sistem la altul fara a necesita un fisier gazda</label><br>
+
+    <input type="checkbox" id="site_compromis" name="q14" value="site_compromis">
+    <label for="site_compromis">Se instaleaza automat pe un dispozitiv prin accesarea unui site web compromis</label><br>
+
+    <input type="checkbox" id="auto_distrugere" name="q14" value="auto_distrugere">
+    <label for="auto_distrugere">Ramane activ pentru o perioada limitata, dupa care se auto-distruge</label><br>
+
+    <input type="checkbox" id="auto_reproducere" name="q14" value="auto_reproducere"  checked disabled>
+    <label for="auto_reproducere">Se poate auto-reproduce, dar necesita o actiune a utilizatorului pentru a se raspandi</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Care dintre urmatoarele tehnici de Penetration Testing presupune capturarea si analizarea traficului de retea pentru a obtine informatii sensibile?</p>
+
+    <input type="checkbox" id="brute_force" name="q15" value="brute_force">
+    <label for="brute_force">Brute-Force Attacks</label><br>
+
+    <input type="checkbox" id="spoofing" name="q15" value="spoofing">
+    <label for="spoofing">Spoofing</label><br>
+
+    <input type="checkbox" id="vulnerability_scanning" name="q15" value="vulnerability_scanning">
+    <label for="vulnerability_scanning">Vulnerability Scanning</label><br>
+
+    <input type="checkbox" id="network_sniffing" name="q15" value="network_sniffing" checked disabled>
+    <label for="network_sniffing">Network Sniffing</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Cum se poate ascunde un virus pentru a fi mai greu detectabil de catre un antivirus?</p>
+
+    <input type="checkbox" id="nu_ramane_rezident" name="q16" value="nu_ramane_rezident">
+    <label for="nu_ramane_rezident">Nu ramane rezident in memorie</label><br>
+
+    <input type="checkbox" id="sufera_mutatii" name="q16" value="sufera_mutatii" checked disabled>
+    <label for="sufera_mutatii">Sufera mutatii</label><br>
+
+    <input type="checkbox" id="redirectioneaza_apeluri" name="q16" value="redirectioneaza_apeluri" checked disabled>
+    <label for="redirectioneaza_apeluri">Redirectioneaza apelurile sistem</label><br>
+
+    <input type="checkbox" id="infecteaza_fisiere_hidden" name="q16" value="infecteaza_fisiere_hidden">
+    <label for="infecteaza_fisiere_hidden">Infecteaza doar fisiere ascunse (hidden)</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Atacurile de tip phishing sunt in general insotite de atacuri de tip:</p>
+
+    <input type="checkbox" id="compromitere_server" name="q17" value="compromitere_server" checked disabled>
+    <label for="compromitere_server">Atacuri ce presupun compromiterea securitatii unui server web</label><br>
+
+    <input type="checkbox" id="social_engineering" name="q17" value="social_engineering" checked disabled>
+    <label for="social_engineering">Atacuri de tip Social Engineering</label><br>
+
+    <input type="checkbox" id="denial_service" name="q17" value="denial_service">
+    <label for="denial_service">Denial of service</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Care dintre urmatoarele este un tip de malware care se raspandeste prin retele si care nu necesita un fisier gazda pentru a se raspandi?</p>
+
+    <input type="checkbox" id="troian" name="q18" value="troian">
+    <label for="troian">Troian</label><br>
+
+    <input type="checkbox" id="rootkit" name="q18" value="rootkit">
+    <label for="rootkit">Rootkit</label><br>
+
+    <input type="checkbox" id="vierme" name="q18" value="vierme" checked disabled>
+    <label for="vierme">Vierme</label><br>
+
+    <input type="checkbox" id="virus" name="q18" value="virus">
+    <label for="virus">Virus</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>In contextul securitatii intr-un mediu SaaS (Software as a Service), care dintre urmatoarele masuri este esentiala pentru protejarea conturilor utilizatorilor?</p>
+
+    <input type="checkbox" id="mfa_utilizatori" name="q19" value="mfa_utilizatori"  checked disabled>
+    <label for="mfa_utilizatori">Implementarea autentificarii multi-factor (MFA) pentru utilizatori</label><br>
+
+    <input type="checkbox" id="protejarea_integritatii_os" name="q19" value="protejarea_integritatii_os">
+    <label for="protejarea_integritatii_os">Protejarea integritatii sistemelor de operare utilizate</label><br>
+
+    <input type="checkbox" id="analiza_topologie" name="q19" value="analiza_topologie">
+    <label for="analiza_topologie">Realizarea unei analize complete a topologiei retelei</label><br>
+
+    <input type="checkbox" id="control_acces_aplicatii" name="q19" value="control_acces_aplicatii">
+    <label for="control_acces_aplicatii">Asigurarea unui control strict asupra accesului la aplicatiile interne</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Cheia publica pentru verificarea semnaturilor DKIM poate fi aflata:</p>
+
+    <input type="checkbox" id="qkip" name="q20" value="qkip">
+    <label for="qkip">prin intermediul protocolului QKIP (Query Key Internet Protocol)</label><br>
+
+    <input type="checkbox" id="antete_email" name="q20" value="antete_email">
+    <label for="antete_email">se regaseste in antetele e-mailurilor semnate folosind DKIM</label><br>
+
+    <input type="checkbox" id="interogare_sql" name="q20" value="interogare_sql">
+    <label for="interogare_sql">prin intermediul unei interogari SQL</label><br>
+
+    <input type="checkbox" id="interogare_dns" name="q20" value="interogare_dns" checked disabled>
+    <label for="interogare_dns">prin intermediul unei interogari DNS</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Care din urmatoarele fisiere sunt semnate digital in cadrul unei infrastructuri de tip PKI?</p>
+
+    <input type="checkbox" id="fisier_srl" name="q21" value="fisier_srl">
+    <label for="fisier_srl">Fisierul .srl al autoritatii de certificare</label><br>
+
+    <input type="checkbox" id="certificate_crt" name="q21" value="certificate_crt" checked disabled>
+    <label for="certificate_crt">Certificate digitale (.crt)</label><br>
+
+    <input type="checkbox" id="cereri_csr" name="q21" value="cereri_csr" checked disabled>
+    <label for="cereri_csr">Cererile de eliberare si semnare a certificatelor (fisierele .csr)</label><br>
+
+    <input type="checkbox" id="chei_private" name="q21" value="chei_private">
+    <label for="chei_private">Fisierele ce memoreaza chei private (.key)</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Injectiile JavaScript se datoreaza:</p>
+
+    <input type="checkbox" id="validari_js" name="q22" value="validari_js">
+    <label for="validari_js">Validari insuficiente chiar la nivelului codului JavaScript</label><br>
+
+    <input type="checkbox" id="validari_server_side" name="q22" value="validari_server_side" checked disabled>
+    <label for="validari_server_side">Validari insuficiente server-side la nivelul scriptului ce prelucreaza datele din formular</label><br>
+
+    <input type="checkbox" id="http_vs_https" name="q22" value="http_vs_https">
+    <label for="http_vs_https">Folosirii protocolului http in locul protocolului https</label><br>
+
+    <input type="checkbox" id="buguri_browser" name="q22" value="buguri_browser">
+    <label for="buguri_browser">Unor buguri prezente la nivelul browserului web</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Care dintre urmatoarele protocoale permit realizarea de retele virtuale private:</p>
+
+    <input type="checkbox" id="wireguard" name="q23" value="wireguard" checked disabled>
+    <label for="wireguard">Wireguard</label><br>
+
+    <input type="checkbox" id="otp" name="q23" value="otp">
+    <label for="otp">OTP (Open Tunneling Protocol)</label><br>
+
+    <input type="checkbox" id="llsp" name="q23" value="llsp">
+    <label for="llsp">Link Layer Secure Protocol (LLSP)</label><br>
+
+    <input type="checkbox" id="openvpn" name="q23" value="openvpn" checked disabled>
+    <label for="openvpn">OpenVPN</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Care dintre urmatoarele afirmatii sunt adevarate despre cheia secreta si cheia privata in criptografie?</p>
+
+    <input type="checkbox" id="nicio_diferenta" name="q24" value="nicio_diferenta">
+    <label for="nicio_diferenta">Nu exista nicio diferenta intre cheia secreta si cheia privata</label><br>
+
+    <input type="checkbox" id="secreta_asimetrica" name="q24" value="secreta_asimetrica">
+    <label for="secreta_asimetrica">Cheia secreta este utilizata in criptografia asimetrica, iar cheia privata in criptografia simetrica</label><br>
+
+    <input type="checkbox" id="rotita_vs_statica" name="q24" value="rotita_vs_statica" checked disabled>
+    <label for="rotita_vs_statica">Cheia secreta este rotita uneori purtand si numele de cheie de sesiune, in timp ce cheia privata are un caracter mult mai static</label><br>
+
+    <input type="checkbox" id="secreta_autentificare" name="q24" value="secreta_autentificare">
+    <label for="secreta_autentificare">Cheia secreta este folosita doar pentru autentificare, iar cheia privata doar pentru criptare</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Ce contine codul QR afisat de un client nou WhatsApp atunci cand dorim sa ne autentificam intr-un asemenea client (spre exemplu aplicatia WhatsApp pentru desktop sau varianta web-based de WhatsApp)?</p>
+
+    <input type="checkbox" id="cheie_privata" name="q25" value="cheie_privata">
+    <label for="cheie_privata">O cheie privata</label><br>
+
+    <input type="checkbox" id="cheie_publica" name="q25" value="cheie_publica" checked disabled>
+    <label for="cheie_publica">O cheie publica</label><br>
+
+    <input type="checkbox" id="cheie_secreta" name="q25" value="cheie_secreta">
+    <label for="cheie_secreta">O cheie secreta</label><br>
+
+    <input type="checkbox" id="parola_utilizator" name="q25" value="parola_utilizator">
+    <label for="parola_utilizator">Parola utilizatorului care se transmite serverelor de WhatsApp pentru autentificare</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Intrebarea:</strong></legend>
+    <p>Ce i se afiseaza utilizatorului unui client de SSH prima data cand se conecteaza la un server:</p>
+
+    <input type="checkbox" id="cheie_publica_ssh" name="q26" value="cheie_publica_ssh">
+    <label for="cheie_publica_ssh">Cheia publica a serverului de SSH</label><br>
+
+    <input type="checkbox" id="hash_cheie_publica" name="q26" value="hash_cheie_publica" checked disabled>
+    <label for="hash_cheie_publica">Un hash al cheii publice a serverului de SSH</label><br>
+
+    <input type="checkbox" id="cheie_privata_ssh" name="q26" value="cheie_privata_ssh">
+    <label for="cheie_privata_ssh">Cheia privata a serverului de SSH</label><br>
+
+    <input type="checkbox" id="nimic_prompt" name="q26" value="nimic_prompt">
+    <label for="nimic_prompt">Nu i se afiseaza nimic, cel mult prompt-ul pentru a-si introduce parola</label>
+</fieldset>
 
     </form>
 </body>
